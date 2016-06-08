@@ -6,6 +6,7 @@ baseurl: ""
 url: "http://www.amdoyle.com/"
 twitter_username: AmDoyle
 github_username:  amdoyle
+linkedin_username: annmariedoyle
 
 # Build settings
 markdown: kramdown
