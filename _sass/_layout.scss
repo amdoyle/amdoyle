@@ -2,12 +2,8 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+    min-height: 275px;
 }
 
 .site-title {
@@ -16,20 +12,73 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
 }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
+#navbar {
+  margin: 10%;
+  width: 23%;
+}
 
-    .menu-icon {
-        display: none;
+.nav {
+
+}
+
+.nav-menu {
+  visibility: hidden;
+  display: block;
+  list-style: none;
+  padding-top: 55%;
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0.0;
+  transition: opacity 1s linear;
+  margin-left: 25%;
+}
+
+.hamburger-nav {
+  width: 100%;
+  height: 275px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  &:hover > .icon-bar:nth-child(2n+0){
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+  }
+  &:hover > .icon-bar:nth-child(2n+3) {
+    display: none;
+    opacity: 0;
+  }
+  &:hover > .icon-bar:nth-child(2n+4) {
+    display: inline-block;
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+  &:hover > .nav-menu{
+      visibility: visible;
+      opacity: 1.0;
     }
+
+}
+
+.icon-bar {
+  width: 100%;
+  height: 5%;
+  display: block;
+  margin:  0 0 5% 0;
+  content: "";
+  background-color: pink;
+  transition: 1s ease-in-out;
+  opacity: 100%;
+}
+
+.sr-only {
+  display: none;
+}
+
+
+
 
     .page-link {
         color: $text-color;
@@ -72,18 +121,18 @@
         .trigger {
             clear: both;
             display: none;
-        }
 
         &:hover .trigger {
             display: block;
             padding-bottom: 5px;
         }
+      }
 
         .page-link {
             display: block;
             padding: 5px 10px;
         }
-    }
+
 }
 
 
