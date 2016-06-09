@@ -20,7 +20,6 @@
   margin-bottom: 0;
   padding-bottom: 0;
   position: fixed;
-  // padding-top: 10px
 }
 
 .site-title {
@@ -48,7 +47,22 @@
   margin-bottom: 0;
   opacity: 0.0;
   transition: opacity 1s linear;
-  margin-left: 25%;
+  // margin-left: 25%;
+  margin-left: -50%;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 15%;
+  text-align: center;
+
+  & li {
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+  & a {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .hamburger-nav {
@@ -72,9 +86,10 @@
     transform: rotate(-45deg);
     position: absolute;
   }
-  &:hover > .nav-menu{
+  &:hover > .nav-menu {
       visibility: visible;
       opacity: 1.0;
+      background-color: $grey-color-light;
     }
 }
 
