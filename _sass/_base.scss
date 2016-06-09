@@ -62,7 +62,7 @@ figcaption {
 
 /**
  * Lists
- */
+
 ul, ol {
     margin-left: $spacing-unit;
 }
@@ -76,18 +76,18 @@ li {
 
 
 
-/**
+
  * Headings
- */
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
 
 
-/**
+
  * Links
- */
+
 a {
     color: $text-color;
     text-decoration: none;
@@ -105,9 +105,9 @@ a {
 
 
 
-/**
- * Blockquotes
- */
+
+  Blockquotes
+
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
@@ -123,9 +123,9 @@ blockquote {
 
 
 
-/**
+
  * Code formatting
- */
+
 pre,
 code {
     font-size: 15px;
@@ -151,9 +151,8 @@ pre {
 
 
 
-/**
- * Wrapper
- */
+ Wrapper
+
 .wrapper {
     max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
     max-width:         calc(800px - (#{$spacing-unit} * 2));
@@ -173,9 +172,8 @@ pre {
 
 
 
-/**
- * Clearfix
- */
+/ Clearfix
+
 %clearfix {
 
     &:after {
@@ -187,9 +185,8 @@ pre {
 
 
 
-/**
- * Icons
- */
+ Icons
+
 .icon {
 
     > svg {
@@ -203,3 +200,4 @@ pre {
         }
     }
 }
+*/
