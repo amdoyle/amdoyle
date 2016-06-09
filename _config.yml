@@ -12,4 +12,4 @@ linkedin_username: annmariedoyle
 markdown: kramdown
 
 gems:
-  -jekyll-coffeescript
+ - jekyll-coffeescript
