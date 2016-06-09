@@ -13,3 +13,5 @@ markdown: kramdown
 
 gems:
  - jekyll-coffeescript
+include:
+- _scripts
