@@ -2,10 +2,10 @@ jQuery(document).ready(function($) {
 
   $(".nav-menu").hide();
 
-  $('.hamburger-nav').on('click', function(e){;
+  $('#hamburger-nav').on('click', function(e){;
     e.preventDefault();
+    $(this).toggleClass('close-button');
     $('.nav-menu').slideToggle();
-    $('.hamburger-nav').addClass
   });
 
 
