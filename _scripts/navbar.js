@@ -6,6 +6,7 @@ jQuery(document).ready(function($) {
     e.preventDefault();
     $(this).toggleClass('close-button');
     $('.nav-menu').slideToggle();
+    $('#logo').toggleClass('dim');
   });
 
 

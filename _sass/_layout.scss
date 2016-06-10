@@ -1,7 +1,6 @@
-/**
- * Site header
- */
+/* --------------- BASE STYLES FOR iPhone 5 - 375 x 667 --------------- */
 
+ // Site header
 body {
   height: 100%;
   width: 100%;
@@ -28,7 +27,7 @@ body {
   position: fixed;
 }
 
- /* Nav bar */
+// Nav bar
 #navbar {
   width: 75%;
   min-height: 3em;
@@ -47,7 +46,7 @@ body {
 .nav-menu {
   width: 100vw;
   height: 100vh;
-  padding: 135% 10% 10% 0;
+  padding: 13.5em 10% 10% 0;
   display: block;
   list-style: none;
   margin-left: -25%;
@@ -56,15 +55,18 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-color: transparentize($grey-color, 0.35);
+  background-color: transparentize($grey-color, 0.05);
+  z-index: 1;
   & li {
     width: auto;
+    z-index: 2;
   }
   & a {
-    font-size: 2em;
-    line-height: 2.1em;
+    font-size: 1.75em;
+    line-height: 1.75em;
     text-decoration: none;
     color: white;
+    z-index: 3;
   }
   & a:hover{
     color: $brand-color-dark;
@@ -76,7 +78,7 @@ body {
   height: 50px;
   position: relative;
   content: "";
-  z-index: 1;
+  // z-index: 1;
   & span, span:before, span:after {
   width: 100%;
   height: .25em;
@@ -86,7 +88,7 @@ body {
   background-color: $secondary-color;
   transition: all .25s ease-in-out;
 } & span {
-  margin-top: 10%;
+  margin-top: .5em;
   margin-bottom: 10%;
 } & span:before {
   top: -.5em;
@@ -102,23 +104,28 @@ body {
 }
 #hamburger-nav.close-button span:before {
   transform: rotate(45deg);
-  margin-top: .75em;
+  margin-top: .5em;
 }
 #hamburger-nav.close-button span:after {
   transform: rotate(-45deg);
-  margin-bottom: 0;
+  margin-bottom: .25em;
 }
 .sr-only {
   height: 0;
   display: none;
 }
 
-/* Site logo */
+//Site logo
 #logo {
   display: inline-block;
   margin-top: -2.75em;
   width: 60%;
   position: relative;
+  transition: all .25s ease-in-out;
+}
+
+.dim {
+  opacity: .2;
 }
 
 .main-content {
@@ -149,6 +156,79 @@ body {
   & a {
     color: $brand-color;
   }
+}
+
+
+/* --------------- iPhone 6 --------------- */
+@media screen and (min-width: 374px) and (max-width: 413px) and (orientation: portrait){
+
+  #hamburger-nav span {
+    margin-top: .75em
+    }
+  #logo{
+    margin-top: -3em;
+  }
+
+}
+
+/* --------------- iPhone 6plus --------------- */
+@media screen and (min-width: 413px) and (max-width: 513px) {
+
+  #hamburger-nav span {
+    margin-top: 1em;
+  }
+  #logo {
+    margin-top: -3em;
+  }
+
+}
+
+/* --------------- Mobile Landscape Orientation --------------- */
+@media screen and (min-width: 514px) and (max-width: 650px), handheld and (orientation: landscape) {
+
+  #navbar {
+    border-top: 4em solid $grey-color;
+    border-right: 4em solid transparent;
+  }
+  #hamburger-nav span {
+    width: 70%;
+    margin-top: 1.5em
+  }
+  #logo{
+    margin-top: -4em;
+    width: 50%;
+  }
+  .nav-menu {
+    margin-right: -31%;
+    margin-left: -31%;
+  }
+
+}
+
+@media screen and (min-width: 651px) and (max-width: 1000px), handheld and (orientation: landscape) {
+
+  #navbar {
+    border-top: 4em solid $grey-color;
+    border-right: 4em solid transparent;
+  }
+
+  #hamburger-nav span {
+    width: 63%;
+    margin-top: 2.25em;
+  }
+  #logo{
+    margin-top: -4.25em;
+    width: 45%;
+  }
+  .nav-menu {
+    margin-right: -35%;
+    margin-left: -35%;
+    & a{
+      font-size: 2em;
+      line-height: 2em;
+    }
+  }
+
 }
 /*
 @media
