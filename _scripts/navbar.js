@@ -1,15 +1,11 @@
 jQuery(document).ready(function($) {
 
-  console.log("page ready");
-
   $(".nav-menu").hide();
 
-  console.log("nav should be hidden");
-
-  $('.hamburger-nav').on('click', function(e){
-    console.log("nav clicked");
+  $('.hamburger-nav').on('click', function(e){;
     e.preventDefault();
-    $('.nav-menu').toggle();
+    $('.nav-menu').slideToggle();
+    $('.hamburger-nav').addClass
   });
 
 
