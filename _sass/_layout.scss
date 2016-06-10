@@ -2,28 +2,23 @@
  * Site header
  */
 
- body {
-   height: 100%;
-   width: 100%;
- }
-
-
-
- .body-wrapper {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   min-height: 100vh;
- }
+body {
+  height: 100%;
+  width: 100%;
+}
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
 .group::before, .group::after {
   content:"";
   display: table;
 }
-
 .group::after {
   clear:both;
 }
-
 .group {
   zoom: 1; /*IE6&7*/
 }
@@ -34,19 +29,17 @@
 }
 
  /* Nav bar */
-
 #navbar {
   width: 75%;
-  min-height: 50px;
-  border-top: 50px solid $grey-color;
-  border-right: 50px solid rgba(0,0,0,0);
+  min-height: 3em;
+  border-top: 3em solid $grey-color;
+  border-right: 3em solid rgba(0,0,0,0);
   margin: 7% 10% 7% 0;
   padding: 1% 3% 3% 3%;
   display: flex;
   justify-content: space-around;
   order: 1 0 auto;
 }
-
 .nav {
   width: 30%;
   margin-top: -15%;
@@ -104,35 +97,17 @@
     display:none;
   }
 }
-
 #hamburger-nav.close-button span{
-    height: 0;
+  height: 0;
 }
-
 #hamburger-nav.close-button span:before {
-    // height: 10%;
-    // display: inline-block;
-    transform: rotate(45deg);
-    margin-top: .75em;
-    // position: absolute;
-    // color: pink;
-   }
-   #hamburger-nav.close-button  span:after {
-    // height: 10%;
-    // display: inline-block;
-    transform: rotate(-45deg);
-    margin-bottom: 0;
-    // position: absolute;
-  }
-
-
-
-// .close-button:last-child {
-//     display: inline-block;
-//     transform: rotate(-45deg);
-//     position: absolute;
-//   }
-
+  transform: rotate(45deg);
+  margin-top: .75em;
+}
+#hamburger-nav.close-button span:after {
+  transform: rotate(-45deg);
+  margin-bottom: 0;
+}
 .sr-only {
   height: 0;
   display: none;
@@ -141,15 +116,9 @@
 /* Site logo */
 #logo {
   display: inline-block;
-  margin-top: -15%;
+  margin-top: -2.75em;
   width: 60%;
   position: relative;
-  // & svg {
-  //   width: 100%;
-  //   height: auto;
-  //   margin: 0;
-  //   padding: 0;
-  // }
 }
 
 .main-content {
