@@ -1,4 +1,7 @@
 /* --------------- BASE STYLES FOR iPhone 5 - 375 x 667 --------------- */
+  p {
+   font-size: $base-line-height;
+  }
 
  // Site header
 .body-wrapper {
@@ -64,7 +67,7 @@
     z-index: 3;
   }
   & a:hover{
-    color: $brand-color-dark;
+    color: $secondary-color-dark;
   }
 }
 
@@ -307,7 +310,7 @@ ul.contact-list {
 }
 
 /* --------------- Mobile Landscape Orientation: iPhone 6  & tablet portrait  --------------- */
-@media screen and (min-width: 999px) and (max-width: 2000px), handheld and (orientation: landscape) {
+@media screen and (min-width: 999px) and (max-width: 1099px), handheld and (orientation: landscape) {
 
   p {
     font-size: 1.5em;
@@ -378,216 +381,173 @@ ul.contact-list {
     }
   }
 }
-/*
 
-page-link {
-//         color: $text-color;
-//         line-height: $base-line-height;
-//
-//         // Gaps between nav items, but not on the first one
-//         &:not(:first-child) {
-//             margin-left: 20px;
-//         }
-//     }
-//
-//     @include media-query($on-palm) {
-//         position: absolute;
-//         top: 9px;
-//         right: 30px;
-//         background-color: $background-color;
-//         border: 1px solid $grey-color-light;
-//         border-radius: 5px;
-//         text-align: right;
-//
-//         .menu-icon {
-//             display: block;
-//             float: right;
-//             width: 36px;
-//             height: 26px;
-//             line-height: 0;
-//             padding-top: 10px;
-//             text-align: center;
-//
-//             > svg {
-//                 width: 18px;
-//                 height: 15px;
-//
-//                 path {
-//                     fill: $grey-color-dark;
-//                 }
-//             }
-//         }
-//
-//         .trigger {
-//             clear: both;
-//             display: none;
-//
-//         &:hover .trigger {
-//             display: block;
-//             padding-bottom: 5px;
-//         }
-//       }
-//
-//         .page-link {
-//             display: block;
-//             padding: 5px 10px;
-//         }
-//
-// }
+/* --------------- Laptop  --------------- */
+@media screen and (min-width: 1100px) and (max-width: 1999px), handheld and (orientation: landscape) {
 
+  .main-content {
+    padding-top: 0;
+    & h1 {
+      font-size: 3em;
+    } & li {
+      font-size: $base-font-size;
+    }
+  }
 
+  #navbar {
+    border-top: 7em solid $grey-color;
+    border-right: 7em solid transparent;
+  }
 
-// .page-content {
-//
-// }
-// /**
-//  * Site footer
-//  */
-// .site-footer {
-//     // border-top: 1px solid $grey-color-light;
-//     // padding: $spacing-unit 0;
-//     position: fixed;
-//     margin-bottom: 0;
-//      padding: 20px;
-//       text-align: center;
-//       flex-shrink: 0;
-// }
-//
-// .footer-heading {
-//     font-size: 18px;
-//     margin-bottom: $spacing-unit / 2;
-// }
-//
-// .contact-list,
-// .social-media-list {
-//     list-style: none;
-//     margin-left: 0;
-// }
-//
-// .footer-col-wrapper {
-//     font-size: 15px;
-//     color: $grey-color;
-//     margin-left: -$spacing-unit / 2;
-//     @extend %clearfix;
-// }
-//
-// .footer-col {
-//     float: left;
-//     margin-bottom: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-// }
-//
-// .footer-col-1 {
-//     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-//     width:         calc(35% - (#{$spacing-unit} / 2));
-// }
-//
-// .footer-col-2 {
-//     width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-//     width:         calc(20% - (#{$spacing-unit} / 2));
-// }
-//
-// .footer-col-3 {
-//     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-//     width:         calc(45% - (#{$spacing-unit} / 2));
-// }
-//
-// @include media-query($on-laptop) {
-//     .footer-col-1,
-//     .footer-col-2 {
-//         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-//         width:         calc(50% - (#{$spacing-unit} / 2));
-//     }
-//
-//     .footer-col-3 {
-//         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-//         width:         calc(100% - (#{$spacing-unit} / 2));
-//     }
-// }
-//
-// @include media-query($on-palm) {
-//     .footer-col {
-//         float: none;
-//         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-//         width:         calc(100% - (#{$spacing-unit} / 2));
-//     }
-// }
-//
-//
-//
-// /**
-//  * Page content
-//  */
-// .page-content {
-//     padding: $spacing-unit 0;
-// }
-//
-// .page-heading {
-//     font-size: 20px;
-// }
-//
-// .post-list {
-//     margin-left: 0;
-//     list-style: none;
-//
-//     > li {
-//         margin-bottom: $spacing-unit;
-//     }
-// }
-//
-// .post-meta {
-//     font-size: $small-font-size;
-//     color: $grey-color;
-// }
-//
-// .post-link {
-//     display: block;
-//     font-size: 24px;
-// }
-//
-//
-//
-// /**
-//  * Posts
-//  */
-// .post-header {
-//     margin-bottom: $spacing-unit;
-// }
-//
-// .post-title {
-//     font-size: 42px;
-//     letter-spacing: -1px;
-//     line-height: 1;
-//
-//     @include media-query($on-laptop) {
-//         font-size: 36px;
-//     }
-// }
-//
-// .post-content {
-//     margin-bottom: $spacing-unit;
-//
-//     h2 {
-//         font-size: 32px;
-//
-//         @include media-query($on-laptop) {
-//             font-size: 28px;
-//         }
-//     }
-//
-//     h3 {
-//         font-size: 26px;
-//
-//         @include media-query($on-laptop) {
-//             font-size: 22px;
-//         }
-//     }
-//
-//     h4 {
-//         font-size: 20px;
-//
-//         @include media-query($on-laptop) {
-//             font-size: 18px;
-//         }
-//     }
-// }*/
+  #hamburger-nav span {
+    height: 0.75em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  #hamburger-nav span:before {
+    height: 0.75em;
+    top: 1.5em;
+  }
+
+  #hamburger-nav span:after {
+    height: 0.75em;
+    bottom: 1.5em;
+  }
+
+  #hamburger-nav.close-button span:after{
+    width: 75%;
+    margin-bottom: -2.5em;
+  }
+  #hamburger-nav.close-button span:before{
+    width: 75%;
+    margin-top: -1em;
+  }
+
+  #logo {
+    margin-top: -7.5em;
+  }
+
+  .nav-menu {
+    width: 79vw;
+    border-right: 4px solid transparentize($grey-color, 0.05);
+    padding-top: 10%;
+    height: auto;
+    margin-top: 25%;
+  }
+
+  .dim {
+    opacity: 100;
+  }
+
+  .footer-content {
+    border-bottom: 6em solid #282c34;
+    border-left: 6em solid transparent;
+    padding-top: 10%;
+    & a, p{
+      font-size: 1.75em;
+    } & ul {
+      padding-top: 2%;
+    }
+  }
+}
+/* --------------- Large Screens  --------------- */
+@media screen and (min-width: 2000px) {
+
+  .nav {
+    width: 25%
+  }
+  #navbar {
+    border-top: 13em solid $grey-color;
+    border-right: 13em solid transparent;
+  }
+
+  #hamburger-nav {
+    width: 25%;
+  }
+  #hamburger-nav span {
+    margin-top: 8.5em;
+    height: .75em;
+  }
+
+  #hamburger-nav span:before {
+    top: 2em;
+    height: .75em;
+  }
+
+  #hamburger-nav span:after {
+    bottom: 2em;
+    height: .75em;
+  }
+
+  #hamburger-nav.close-button span:before {
+    top: 0;
+  }
+
+  #hamburger-nav.close-button span:after {
+    bottom: -1em;
+  }
+
+  .nav-menu{
+    width: 80vw;
+    padding: 10% 010% 10% 0;
+    height: auto;
+    margin-left: -60%;
+    margin-top: 43%;
+  }
+
+  #logo {
+    width: 35%;
+    margin-top: -12.75em;
+  }
+
+  .dim {
+    opacity: 100;
+  }
+
+  .main-content {
+    padding-top: 0;
+    margin-top: 20%;
+    & h1 {
+      text-align: center;
+    }
+  }
+
+  #about img {
+    float: left;
+    width: 25%;
+    box-sizing: padding-box;
+    padding-right: 10%;
+    padding-top: 5%;
+    margin: 0;
+  }
+
+  #about p {
+    float: left;
+    width: 50%;
+    padding-top: 5%;
+  }
+
+  #projects img, .extra-content {
+    width: 90%;
+  }
+
+  .row-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-content ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .resume-content {
+    padding-top: 2%;
+    margin: 0;
+    & ul {
+      padding-bottom: .75em  ;
+    }
+  }
+}
