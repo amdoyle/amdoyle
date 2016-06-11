@@ -307,9 +307,76 @@ ul.contact-list {
 }
 
 /* --------------- Mobile Landscape Orientation: iPhone 6  & tablet portrait  --------------- */
-@media screen and (min-width: 651px) and (max-width: 1000px), handheld and (orientation: landscape) {
+@media screen and (min-width: 999px) and (max-width: 2000px), handheld and (orientation: landscape) {
 
+  p {
+    font-size: 1.5em;
+  }
 
+  #navbar {
+    border-top: 6em solid #282c34;
+    border-right: 6em solid transparent;
+  }
+
+  #hamburger-nav {
+    width: 50%;
+  }
+
+  #hamburger-nav span {
+    height: 0.65em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  #hamburger-nav span:before {
+    height: 0.65em;
+    top: 1.5em;
+  }
+
+  #hamburger-nav span:after {
+    height: 0.65em;
+    bottom: 1.5em;
+  }
+
+  #hamburger-nav.close-button span:after{
+    width: 75%;
+    margin-bottom: -2.5em;
+  }
+  #hamburger-nav.close-button span:before{
+    width: 75%;
+    margin-top: -1em;
+  }
+
+  #logo {
+    margin-top: -6.75em;
+    width: 50%;
+  }
+
+  .nav-menu {
+    margin-left: -30%;
+    margin-right: -30%;
+    margin-top: -70%;
+  }
+  .main-content {
+    margin-top: 20%;
+   & h1 {
+     font-size: 3em;
+   } & ul {
+     font-size: 1.25em;
+   }
+  }
+
+  .resume-content {
+    margin-bottom: -2%;
+  }
+
+  .footer-content {
+    border-bottom: 6em solid #282c34;
+    border-left: 6em solid transparent;
+    & a, p{
+      font-size: 1.5em;
+    }
+  }
 }
 /*
 
