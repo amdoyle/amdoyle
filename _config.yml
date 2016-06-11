@@ -11,7 +11,5 @@ linkedin_username: annmariedoyle
 # Build settings
 markdown: kramdown
 
-gems:
- - jekyll-coffeescript
 include:
 - _scripts
