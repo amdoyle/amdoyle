@@ -16,9 +16,10 @@ $title-size: 2.5em;
 
 $spacing-unit:     30px;
 
-$white-text:       #fdfdfd;
+$white-color:       #fdfdfd;
 $text-color:       #323232;
 $secondary-color:  #59fff7;
+$secondary-color-dark:  darken($secondary-color, 25%);
 $background-color: #fdfdfd;
 $brand-color:      #FF5962;
 $brand-color-dark: darken($brand-color, 25%);

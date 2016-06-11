@@ -1,10 +1,6 @@
 /* --------------- BASE STYLES FOR iPhone 5 - 375 x 667 --------------- */
 
  // Site header
-body {
-  height: 100%;
-  width: 100%;
-}
 .body-wrapper {
   display: flex;
   flex-direction: column;
@@ -208,6 +204,11 @@ ul.contact-list {
 .rotate-open {
   display: inline-block;
   transform: rotate(90deg);
+}
+
+.resume-content-li li:before {
+  content: "• ";
+  color: $brand-color;
 }
 
 /* --------------- iPhone 6 --------------- */

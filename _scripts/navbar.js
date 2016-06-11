@@ -13,8 +13,6 @@ jQuery(document).ready(function($) {
 
   $('.project-content').on('click', function(e){
     $(this).next('.extra-content').slideToggle();
-    console.log(this);
-    console.log($(this).contents('li>b>span>.arrow'));
     $(this).contents().find('.arrow').toggleClass('rotate-open');
   });
 
