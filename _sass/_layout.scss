@@ -139,7 +139,16 @@ body {
   & h1 {
     font-family: $title-font-family;
     font-size: $title-size;
+  } & h2 {
+    font-size: 1.5em;
+    padding-bottom: 2%;
+  } & ul {
+    padding-bottom: 2%;
   }
+}
+
+.resume-content {
+    margin-top: 5%;
 }
 
 .site-footer {
@@ -172,7 +181,7 @@ ul.contact-list {
   margin-top: 3.5em;
 }
 
-#about  & img {
+#about img {
     width: 50%;
     margin: 0 15%;
     padding: 10%;
