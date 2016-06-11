@@ -187,6 +187,28 @@ ul.contact-list {
     padding: 10%;
   }
 
+#projects h1 {
+  padding-bottom: 5%;
+}
+#projects img {
+  width: 100%;
+}
+
+#projects li {
+  padding-bottom: 1%;
+}
+
+
+.arrow {
+  display: inline-block;
+  transition: all .5s ease-in-out;
+  font-size: 1.2em;
+}
+
+.rotate-open {
+  display: inline-block;
+  transform: rotate(90deg);
+}
 
 /* --------------- iPhone 6 --------------- */
 @media screen and (min-width: 374px) and (max-width: 413px) and (orientation: portrait){

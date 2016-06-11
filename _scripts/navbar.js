@@ -2,11 +2,20 @@ jQuery(document).ready(function($) {
 
   $(".nav-menu").hide();
 
-  $('#hamburger-nav').on('click', function(e){;
+  $('#hamburger-nav').on('click', function(e){
     e.preventDefault();
     $(this).toggleClass('close-button');
     $('.nav-menu').slideToggle();
     $('#logo').toggleClass('dim');
+  });
+
+  $('.extra-content').hide();
+
+  $('.project-content').on('click', function(e){
+    $(this).next('.extra-content').slideToggle();
+    console.log(this);
+    console.log($(this).contents('li>b>span>.arrow'));
+    $(this).contents().find('.arrow').toggleClass('rotate-open');
   });
 
 
