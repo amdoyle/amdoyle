@@ -1,11 +1,16 @@
 /* --------------- BASE STYLES FOR iPhone 5 - 320 x 568 --------------- */
 
+
+
  // Site header
 .body-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  & h1 {
+    text-align: center;
+  }
 }
 .group::before, .group::after {
   content:"";
@@ -43,7 +48,7 @@
   opacity: 1  ;
   position: relative;
   z-index: 10;
-  width: 75%;
+  width: 80%;
   border-top: 3em solid $grey-color;
   border-right: 3em solid rgba(0,0,0,0);
   margin: 7% 10% 0 0;
@@ -62,7 +67,7 @@
   opacity: 1;
   width: 100vw;
   height: 100vh;
-  padding: 0 10% 10% 0;
+  padding: 0 10% 200% 0;
   margin-top: -150%;
   margin-left: -50%;
   display: block;
@@ -236,16 +241,19 @@ ul.contact-list {
   color: $brand-color;
 }
 
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* --------------- iPhone 6 --------------- */
 @media screen and (min-width: 374px) and (orientation: portrait){
 
   .nav {
     margin-top: -13%;
     }
-  // #logo{
-  //   margin-top: -3em;
-  // }
-
 }
 
 /* --------------- iPhone 6plus --------------- */
@@ -271,7 +279,6 @@ ul.contact-list {
   .nav-menu {
     margin-left: -50%;
     margin-top: -112%;
-    padding-bottom: 50%;
   }
 
   #navbar {
@@ -446,23 +453,14 @@ ul.contact-list {
    }
 
    #logo {
-     margin-top: -11%;
-     width: 35%;
+     margin-top: -10%;
+     width: 30%;
+     padding-left: 14%;
    }
 
-
-  // #hamburger-nav.close-button span:after{
-  //   width: 75%;
-  //   margin-bottom: -2.5em;
-  // }
-  // #hamburger-nav.close-button span:before{
-  //   width: 75%;
-  //   margin-top: -1em;
-  // }
-
   .nav {
-    margin-top: -12%;
-    width: 15%;
+    margin-top: -11%;
+    width: 14%;
   }
   .nav-menu {
     border-right: 4px solid transparentize($grey-color, 0.05);
@@ -492,13 +490,13 @@ ul.contact-list {
   #projects img, .extra-content {
     width: 90%;
   }
-
-  .row-projects {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 5%;
-  }
+  //
+  // .row-projects {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   margin-left: 5%;
+  // }
 
 }
 // @media screen and (min-width: 1234px) and (max-width:1999px) {
@@ -507,11 +505,12 @@ ul.contact-list {
 @media screen and (min-width: 2000px) {
 
   .background-image {
-    height: 15em;
+    height: 14em;
   }
 
   .nav {
     margin-top: -14%;
+    width: 10%;
   }
 
   #navbar {
@@ -519,9 +518,6 @@ ul.contact-list {
     border-right: 13em solid transparent;
   }
 
-  #hamburger-nav {
-    width: 25%;
-  }
   #hamburger-nav span {
     margin-top: 8.5em;
     height: .5em;
@@ -538,19 +534,19 @@ ul.contact-list {
   }
 
   #hamburger-nav.close-button span:before {
-    top: 0;
+    top: -1em;
   }
 
   #hamburger-nav.close-button span:after {
-    bottom: -1em;
+    bottom: .5em;
   }
 
   .nav-menu{
-    width: 88vw;
+    width: 79vw;
     padding: 10% 10% 10% 0;
     height: auto;
-    margin-left: -75%;
-    margin-top: 43%;
+    margin-left: -100%;
+    margin-top: 120%;
     & li {
       padding: 1%;
       font-size: 2em;
@@ -558,8 +554,8 @@ ul.contact-list {
   }
 
   #logo {
-    width: 35%;
-    margin-top: -13em;
+    width: 25%;
+    margin-top: -9%;
   }
 
   .dim {
@@ -567,8 +563,8 @@ ul.contact-list {
   }
 
   .main-content {
-    padding-top: 0;
-    margin-top: 20%;
+    margin-top: 18%;
+    padding: 0 12%;
     & h1 {
       text-align: center;
     }
@@ -593,12 +589,12 @@ ul.contact-list {
     width: 60%;
   }
 
-  .row-projects {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 5%;
-  }
+  // .row-projects {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   margin-left: 5%;
+  // }
 
   .resume-content {
     padding-top: 2%;
@@ -608,12 +604,6 @@ ul.contact-list {
     }
   }
 
-  #contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 @media screen and (min-width: 3000px) {
@@ -622,19 +612,26 @@ ul.contact-list {
     height: 20%;
   }
 
+  .main-content {
+    margin-top: 14%;
+  }
+
   #navbar {
     border-top: 15em solid #282c34;
     border-right: 15em solid transparent;
   }
 
-
+  .nav {
+    margin-top: -13%;
+    width: 10%;
+  }
   .nav-menu {
-    margin-top: 40%;
+    margin-top: 115%;
   }
 
   #logo {
-    width: 37%;
-    margin-top: -11%;
+    width: 25%;
+    margin-top: -7%;
   }
 
   #hamburger-nav {
@@ -650,4 +647,8 @@ ul.contact-list {
       top: 2em;
     }
   }
+
+  #hamburger-nav.close-button span:before {
+      top: 2em;
+    }
 }
