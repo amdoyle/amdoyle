@@ -31,7 +31,7 @@
 .background-image {
   opacity: 0.8;
   background-image: url('/images/code.png');
-  height: 6em;
+  height: 15%;
   width: 100%;
   position: fixed;
 }
@@ -59,7 +59,7 @@
 }
 .nav {
   opacity: 1;
-  width: 20%;
+  width: 10%;
   margin-top: -15%;
   padding: 0 10%;
 }
@@ -101,7 +101,7 @@
   content: "";
   & span, span:before, span:after {
   width: 100%;
-  height: .15em;
+  height: .1em;
   position: absolute;
   display: block;
   content: "";
@@ -138,8 +138,8 @@
 //Site logo
 #logo {
   display: inline-block;
-  margin-top: -15%;
-  width: 40%;
+  margin-top: -13%;
+  width: 30%;
   position: absolute;;
   transition: all .25s ease-in-out;
 }
@@ -153,12 +153,13 @@
   z-index: 0;
   display: flex;
   flex-direction: column;
-  padding: 5% 0 10% 0;
+  padding: 5% 0 0 0;
   order: 2;
   flex: 1;
   margin-top: 30%;
   margin-left: 7%;
   margin-right: 7%;
+  margin-bottom: -5%;
   & h1 {
     font-family: $title-font-family;
     font-size: $title-size;
@@ -183,6 +184,7 @@
   margin-bottom: 20%;
   font-size: .5em;
   line-height: 1em;
+  padding-top: 5%;
 }
 
 .footer-content {
@@ -248,12 +250,22 @@ ul.contact-list {
   align-items: center;
 }
 
+#about img {
+  width: 50%;
+  height: auto;
+}
+
+.pink {
+  color: $brand-color;
+}
+
 /* --------------- iPhone 6 --------------- */
 @media screen and (min-width: 374px) and (orientation: portrait){
 
   .nav {
     margin-top: -13%;
-    }
+  }
+
 }
 
 /* --------------- iPhone 6plus --------------- */
@@ -262,8 +274,9 @@ ul.contact-list {
   .nav {
     margin-top: -12%;
   }
+
   #logo {
-    margin-top: -14%;
+    margin-top: -12%;
   }
 
 }
@@ -282,8 +295,8 @@ ul.contact-list {
   }
 
   #navbar {
-    border-top: 4em solid $grey-color;
-    border-right: 4em solid transparent;
+    border-top: 3em solid $grey-color;
+    border-right: 3em solid transparent;
     margin-bottom: 0;
   }
 
@@ -293,7 +306,7 @@ ul.contact-list {
   }
 
   #logo{
-    margin-top: -3.75em;
+    margin-top: -10%;
   }
 
   .main-content {
@@ -310,11 +323,7 @@ ul.contact-list {
 
 
   .nav {
-    margin-top: -15%;
-  }
-  #navbar {
-    border-top: 4em solid $grey-color;
-    border-right: 4em solid transparent;
+    margin-top: -13%;
   }
 
   #hamburger-nav span {
@@ -322,7 +331,7 @@ ul.contact-list {
     margin-top: 2.75em;
   }
   #logo{
-    margin-top: -12%;
+    margin-top: -9%;
   }
   .nav-menu a{
       line-height: 2em;
@@ -342,27 +351,27 @@ ul.contact-list {
 
 
   .nav {
-    margin-top: -14%;
+    margin-top: -7%;
   }
 
   #navbar {
-    border-top: 6em solid #282c34;
-    border-right: 6em solid transparent
+    border-top: 4em solid #282c34;
+    border-right: 4em solid transparent
   }
 
   #hamburger-nav span {
-    height: 0.3em;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    height: 0.25em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   #hamburger-nav span:before {
-    height: 0.3em;
+    height: 0.25em;
     top: 1em;
   }
 
   #hamburger-nav span:after {
-    height: 0.3em;
+    height: 0.25em;
     bottom: 1em;
   }
 
@@ -376,8 +385,8 @@ ul.contact-list {
   }
 
   #logo {
-    margin-top: -6em;
-    width: 40%;
+    margin-top: -9%;
+    width: 30%;
   }
 
   .nav-menu {
@@ -418,6 +427,21 @@ ul.contact-list {
     margin-left: 5%;
   }
 
+  #about img {
+    float: left;
+    width: 25%;
+    box-sizing: padding-box;
+    padding-right: 10%;
+    padding-top: 5%;
+    margin: 0;
+  }
+
+  #about p {
+    float: left;
+    width: 25%;
+    padding-top: 5%;
+  }
+
 }
 
 /* --------------- Laptop  --------------- */
@@ -428,38 +452,28 @@ ul.contact-list {
     margin-top: 20%;
   }
 
-  .background-image {
-    height: 20%;
-  }
-
-  #navbar {
-    border-top: 7em solid $grey-color;
-    border-right: 7em solid transparent;
-  }
-
-
   #hamburger-nav span {
-    height: .4em;
+    height: .3em;
   }
 
   #hamburger-nav span:before {
-    height: .4em;
+    height: .3em;
     top:  -1.25em;
   }
 
    #hamburger-nav span:after {
-     height: .4em;
+     height: .3em;
      bottom: -1.25em;
    }
 
    #logo {
-     margin-top: -10%;
-     width: 30%;
+     margin-top: -7%;
+     width: 25%;
      padding-left: 14%;
    }
 
   .nav {
-    margin-top: -11%;
+    margin-top: -6%;
     width: 14%;
   }
   .nav-menu {
@@ -504,33 +518,32 @@ ul.contact-list {
 /* --------------- Large Screens  --------------- */
 @media screen and (min-width: 2000px) {
 
-  .background-image {
-    height: 14em;
-  }
+  // .background-image {
+  //   height: 14em;
+  // }
 
   .nav {
-    margin-top: -14%;
+    margin-top: -4%;
     width: 10%;
   }
 
   #navbar {
-    border-top: 13em solid $grey-color;
-    border-right: 13em solid transparent;
+    border-top: 5em solid $grey-color;
+    border-right: 5em solid transparent;
   }
 
   #hamburger-nav span {
-    margin-top: 8.5em;
-    height: .5em;
+    height: .3em;
   }
 
   #hamburger-nav span:before {
-    top: 1.5em;
-    height: .5em;
+    top: 1em;
+    height: .3em;
   }
 
   #hamburger-nav span:after {
-    bottom: 1.5em;
-    height: .5em;
+    bottom: 1em;
+    height: .3em;
   }
 
   #hamburger-nav.close-button span:before {
@@ -554,8 +567,8 @@ ul.contact-list {
   }
 
   #logo {
-    width: 25%;
-    margin-top: -9%;
+    width: 12%;
+    margin-top: -5%;
   }
 
   .dim {
@@ -570,31 +583,9 @@ ul.contact-list {
     }
   }
 
-  #about img {
-    float: left;
-    width: 25%;
-    box-sizing: padding-box;
-    padding-right: 10%;
-    padding-top: 5%;
-    margin: 0;
-  }
-
-  #about p {
-    float: left;
-    width: 50%;
-    padding-top: 5%;
-  }
-
   #projects img, .extra-content {
     width: 60%;
   }
-
-  // .row-projects {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   margin-left: 5%;
-  // }
 
   .resume-content {
     padding-top: 2%;
@@ -608,21 +599,21 @@ ul.contact-list {
 
 @media screen and (min-width: 3000px) {
 
-  .background-image {
-    height: 20%;
-  }
+  // .background-image {
+  //   height: 20%;
+  // }
 
   .main-content {
     margin-top: 14%;
   }
 
   #navbar {
-    border-top: 15em solid #282c34;
-    border-right: 15em solid transparent;
+    border-top: 6em solid #282c34;
+    border-right: 6em solid transparent;
   }
 
   .nav {
-    margin-top: -13%;
+    margin-top: -8%;
     width: 10%;
   }
   .nav-menu {
@@ -630,21 +621,21 @@ ul.contact-list {
   }
 
   #logo {
-    width: 25%;
-    margin-top: -7%;
+    width: 9%;
+    margin-top: -4%;
   }
 
   #hamburger-nav {
     width: 75%;
     margin-top: 50%;
    & span {
-    height: 1em;
+    height: .5em;
   } & span:before {
-    height: 1em;
-    top: -2em;
+    height: .5em;
+    top: -1em;
   } & span:after {
-      height: 1em;
-      top: 2em;
+      height: .5em;
+      top: 1em;
     }
   }
 
