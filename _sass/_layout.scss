@@ -1,4 +1,4 @@
-/* --------------- BASE STYLES FOR iPhone 5 - 375 x 667 --------------- */
+/* --------------- BASE STYLES FOR iPhone 5 - 320 x 568 --------------- */
 
  // Site header
 .body-wrapper {
@@ -54,7 +54,7 @@
 }
 .nav {
   opacity: 1;
-  width: 15%;
+  width: 20%;
   margin-top: -15%;
   padding: 0 10%;
 }
@@ -64,7 +64,7 @@
   height: 100vh;
   padding: 0 10% 10% 0;
   margin-top: -150%;
-  margin-left: -70%;
+  margin-left: -50%;
   display: block;
   list-style: none;
   align-items: center;
@@ -90,7 +90,7 @@
 
 #hamburger-nav {
   width: 100%;
-  height: 50px;
+  height: auto;
   box-sizing: border-box;
   position: relative;
   content: "";
@@ -263,6 +263,17 @@ ul.contact-list {
 /* --------------- Mobile Landscape Orientation: iPhone 5 --------------- */
 @media screen and (min-width: 514px), handheld and (orientation: landscape) {
 
+
+  .nav {
+    margin-top: -15%;
+  }
+
+  .nav-menu {
+    margin-left: -50%;
+    margin-top: -112%;
+    padding-bottom: 50%;
+  }
+
   #navbar {
     border-top: 4em solid $grey-color;
     border-right: 4em solid transparent;
@@ -306,12 +317,8 @@ ul.contact-list {
   #logo{
     margin-top: -12%;
   }
-  .nav-menu {
-    margin-top: -110%;
-    margin-left: -75%;
-    & a{
+  .nav-menu a{
       line-height: 2em;
-    }
   }
   .main-content {
     padding-top: 0;
@@ -324,16 +331,16 @@ ul.contact-list {
 }
 
 /* --------------- Mobile Landscape Orientation: iPhone 6  & tablet portrait  --------------- */
-@media screen and (min-width: 1000px) and (max-width: 1199px), handheld and (orientation: landscape) {
+@media screen and (min-width: 1000px), handheld and (orientation: landscape) {
 
+
+  .nav {
+    margin-top: -14%;
+  }
 
   #navbar {
     border-top: 6em solid #282c34;
-    border-right: 6em solid transparent;
-  }
-
-  #hamburger-nav {
-    width: 50%;
+    border-right: 6em solid transparent
   }
 
   #hamburger-nav span {
@@ -353,11 +360,10 @@ ul.contact-list {
   }
 
   #hamburger-nav.close-button span:after{
-    // width: 75%;
     margin-bottom: 0;
   }
+
   #hamburger-nav.close-button span:before{
-    // width: 75%;
     top: -0.3em;
     margin-top:0;
   }
@@ -365,16 +371,17 @@ ul.contact-list {
   #logo {
     margin-top: -6em;
     width: 40%;
-    margin-left: 15%;
   }
 
   .nav-menu {
-    width: 88vw;
-    margin-left: -100%;
-    margin-top: -25%;
-    padding-top: 60%;
+    width: 74vw;
+    height: auto;
+    margin-left: -52%;
+    margin-top: 25%;
+    justify-content: flex-start;
+    padding-top: 15%;
     & li {
-      padding: 2%;
+      padding: 1%;
     }
   }
   .main-content {
@@ -397,7 +404,6 @@ ul.contact-list {
     margin-right: 0;
   }
 
-
   .row-projects {
     display: flex;
     flex-direction: row;
@@ -408,7 +414,7 @@ ul.contact-list {
 }
 
 /* --------------- Laptop  --------------- */
-@media screen and (min-width: 1100px) and (max-width: 1999px), handheld and (orientation: landscape) {
+@media screen and (min-width: 1100px), handheld and (orientation: landscape) {
 
   .main-content {
     padding-top: 0;
@@ -424,28 +430,23 @@ ul.contact-list {
     border-right: 7em solid transparent;
   }
 
-  .nav {
-    width: 10%;
-  }
 
   #hamburger-nav span {
-    margin-top: 5.5em;
-    height: .25em;
+    height: .4em;
   }
 
   #hamburger-nav span:before {
-    height: .25em;
-    top: 1em;
+    height: .4em;
+    top:  -1.25em;
   }
 
    #hamburger-nav span:after {
-     height: .25em;
-     bottom: 1em;
+     height: .4em;
+     bottom: -1.25em;
    }
 
    #logo {
-     margin-top: -7.25em;
-     padding-left: 25%;
+     margin-top: -11%;
      width: 35%;
    }
 
@@ -459,13 +460,14 @@ ul.contact-list {
   //   margin-top: -1em;
   // }
 
+  .nav {
+    margin-top: -12%;
+    width: 15%;
+  }
   .nav-menu {
-    width: 88vw;
     border-right: 4px solid transparentize($grey-color, 0.05);
-    padding-top: 25%;
-    margin-left: -140%  ;
-    height: auto;
-    margin-top: 85%;
+    margin-top: 40%;
+    margin-left: -63%;
     & li {
       padding: 2%;
       font-size: 1.5em;
@@ -502,14 +504,13 @@ ul.contact-list {
 // @media screen and (min-width: 1234px) and (max-width:1999px) {
 // }
 /* --------------- Large Screens  --------------- */
-@media screen and (min-width: 2000px) and (max-width: 2999px) {
+@media screen and (min-width: 2000px) {
 
   .background-image {
-    height: 20em;
+    height: 15em;
   }
 
   .nav {
-    width: 20%;
     margin-top: -14%;
   }
 
@@ -615,7 +616,7 @@ ul.contact-list {
   }
 }
 
-@media screen and (min-width: 3000px) and (max-width: 3999px) {
+@media screen and (min-width: 3000px) {
 
   .background-image {
     height: 20%;
