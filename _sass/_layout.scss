@@ -186,8 +186,7 @@
 
 .footer-content {
   height: 100%;
-  margin-left: 5%;
-  margin-bottom: 5%;
+  margin: -20% -2% 5% 5%;
   border-bottom: 4em solid #282c34;
   border-left: 3em solid transparent;
   flex: 1;
@@ -203,6 +202,16 @@
   }
 }
 
+.footer-image {
+  opacity: 0.8;
+  background-image: url('../images/code.png');
+  height: 5em;
+  width: 110vw;
+  margin-left: -5%;
+  z-index: -5;
+  top: 91%;
+  position: relative;;
+}
 #about {
   display: flex;
   flex-direction: column;
