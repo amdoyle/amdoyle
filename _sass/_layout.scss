@@ -153,7 +153,7 @@
   z-index: 0;
   display: flex;
   flex-direction: column;
-  padding: 0 0 5% 0;
+  padding: 0 0 10% 0;
   order: 2;
   flex: 1;
   margin-top: 30%;
@@ -175,7 +175,7 @@
 }
 
 .site-footer {
-  width: 95%;
+  width: 100vw;
   height: 0px;
   order: 3;
   margin-left: 7%;
@@ -186,7 +186,7 @@
 
 .footer-content {
   height: 100%;
-  margin: -20% -2% 5% 5%;
+  margin: -16% 0 5% 5%;
   border-bottom: 4em solid #282c34;
   border-left: 3em solid transparent;
   flex: 1;
@@ -206,7 +206,6 @@
   opacity: 0.8;
   background-image: url('../images/code.png');
   height: 5em;
-  width: 110vw;
   margin-left: -5%;
   z-index: -5;
   top: 91%;
@@ -215,6 +214,7 @@
 #about {
   display: flex;
   flex-direction: column;
+  padding-bottom: 2%;
  & img {
     width: 50%;
     margin: 0 15%;
@@ -294,6 +294,10 @@
     margin-top: -13%;
   }
 
+  .footer-content {
+    margin-top: -10%;
+  }
+
 }
 
 /* --------------- Mobile Landscape Orientation: iPhone 5 --------------- */
@@ -333,8 +337,11 @@
     }
   }
 
-  .footer-content p {
+  .footer-content {
+    margin-top: -8%;
+    & p {
     margin-top: 7%;
+    }
   }
 
 }
@@ -549,6 +556,7 @@
   .footer-content {
     border-bottom: 6em solid #282c34;
     border-left: 6em solid transparent;
+    margin-top: -6%;
      & p {
       margin-top: 4%;
     }
@@ -618,6 +626,10 @@
     }
   }
 
+  .footer-image {
+    height: 10em;
+  }
+
   .footer-content p {
     margin-top: 3%;
     padding-left: 0;
@@ -683,8 +695,11 @@
     }
   }
 
-  .footer-content p {
-    margin-top: 2%;
+  .footer-content {
+    margin-top: -3.75%;
+    & p {
+      margin-top: 2%;
+    }
   }
 
   #hamburger-nav.close-button span:before {
@@ -714,8 +729,11 @@
     margin-top: 10%;
   }
 
-  .footer-content p {
-    margin-top: 1.5%;
+  .footer-content {
+    margin-top: -2.75%;
+    & p {
+      margin-top: 1.5%;
+    }
   }
 }
 
@@ -731,5 +749,9 @@
 
   #logo img {
     margin-top: -3.75%;
+  }
+
+  .footer-content {
+    margin-top: -2%;
   }
 }
