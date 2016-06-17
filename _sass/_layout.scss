@@ -182,23 +182,27 @@
   align-self: flex-end;
   font-size: .5em;
   line-height: 1em;
+  z-index: 5;
 }
 
 .footer-content {
   height: 100%;
   margin: -16% 0 5% 5%;
+  padding-left: 5%;
   border-bottom: 4em solid #282c34;
   border-left: 3em solid transparent;
   flex: 1;
   color: white;
   display: flex;
-  flex-direction:column;
+  flex-direction:row;
   justify-content: space-around;
-  & a {
-    color: $brand-color;
-  } & p {
+  align-items: baseline;
+   & img {
+    display: inline;
+    margin: 5% 0 5% 0;
     padding: 2%;
-    margin-top: 14%;
+    width: 25%;
+    height: 25%;
   }
 }
 
@@ -246,7 +250,7 @@
 }
 
 .resume-content-li li:before {
-  content: "• ";
+  content: "// ";
   color: $brand-color;
 }
 
@@ -468,8 +472,8 @@
     margin-top: 20%;
   }
 
-  .footer-content p {
-    margin-top: 6%;
+  .footer-content img {
+    margin-top: 13%;
   }
 
   .resume-content {
@@ -557,14 +561,15 @@
     border-bottom: 6em solid #282c34;
     border-left: 6em solid transparent;
     margin-top: -6%;
-     & p {
-      margin-top: 4%;
-    }
+    & img {
+        margin-top: 10%;
+      }
   }
 
   #projects img, .extra-content {
     width: 90%;
   }
+
 
 }
 
