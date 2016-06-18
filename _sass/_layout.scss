@@ -555,6 +555,7 @@
   }
   .nav-menu {
     border-right: 4px solid transparentize($grey-color, 0.05);
+    width: 81vw;
     & li {
       padding: 2%;
       font-size: 1.5em;
@@ -763,6 +764,10 @@
   .nav {
     margin-top: -5.45%;
     padding-left: 13%;
+  }
+
+  .nav-menu {
+    margin-left: -276%;
   }
 
   #logo img {
