@@ -141,7 +141,7 @@
 //Site logo
 #logo img {
   display: inline-block;
-  margin-top: -50px;
+  margin-top: -48px;
   width: 150px;
   position: absolute;;
   transition: all .25s ease-in-out;
@@ -191,7 +191,7 @@
 
 .footer-content {
   height: 100%;
-  margin: -18% 0 5% 5%;
+  margin: -75px 0 5% 5%;
   padding-left: 5%;
   border-bottom: 4em solid #282c34;
   border-left: 3em solid transparent;
@@ -285,9 +285,9 @@
   //   margin-top: -14%;
   // }
 
-  .footer-content p {
-    margin-top: 11%;
-  }
+  // .footer-content p {
+  //   margin-top: 11%;
+  // }
 
 }
 
@@ -303,9 +303,9 @@
   //   margin-top: -13%;
   // }
 
-  .footer-content {
-    margin-top: -10%;
-  }
+  // .footer-content {
+  //   margin-top: -10%;
+  // }
 
 }
 
@@ -347,9 +347,9 @@
   }
 
   .footer-content {
-    margin-top: -10%;
+    // margin-top: -10%;
     & p {
-    margin-top: 7%;
+    // margin-top: 7%;
     }
   }
 
@@ -388,16 +388,16 @@
       height: auto;
     }
   }
-  .footer-content p {
-    margin-top: 6%;
-  }
+  // .footer-content p {
+  //   margin-top: 6%;
+  // }
   #about .body-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
     & img {
       padding: 0;
-      margin: 5% 5% 0 0;
+      margin: 0 5% 0 0;
       width: 25%;
       height: 25%;
     }
@@ -418,9 +418,9 @@
     margin-top: 25%;
   }
 
-  .footer-content p {
-    margin-top: 5%;
-  }
+  // .footer-content p {
+  //   margin-top: 5%;
+  // }
 }
 
 
@@ -574,9 +574,9 @@
   .footer-content {
     border-bottom: 6em solid #282c34;
     border-left: 6em solid transparent;
-    margin-top: -6%;
+    // margin-top: -6%;
     & img {
-        margin-top: 10%;
+        // margin-top: 10%;
       }
   }
 
@@ -657,10 +657,10 @@
     height: 10em;
   }
 
-  .footer-content p {
-    margin-top: 3%;
-    padding-left: 0;
-  }
+  // .footer-content p {
+  //   margin-top: 3%;
+  //   padding-left: 0;
+  // }
 
   #projects img, .extra-content {
     width: 60%;
@@ -679,9 +679,9 @@
       height: 10%;
     }
 
-  .footer-content {
-    margin-top: -4%;
-  }
+  // .footer-content {
+  //   margin-top: -4%;
+  // }
 }
 
 @media screen and (min-width: 2700px) {
@@ -734,13 +734,13 @@
       top: 1em;
     }
   }
-
-  .footer-content {
-    margin-top: -3.75%;
-    & p {
-      margin-top: 2%;
-    }
-  }
+  //
+  // .footer-content {
+  //   margin-top: -3.75%;
+  //   & p {
+  //     margin-top: 2%;
+  //   }
+  // }
 
   #hamburger-nav.close-button span:before {
       height: .5em;
@@ -774,12 +774,12 @@
   .nav-menu {
     margin-top: 0;
   }
-  .footer-content {
-    margin-top: -2.75%;
-    & p {
-      margin-top: 1.5%;
-    }
-  }
+  // .footer-content {
+  //   margin-top: -2.75%;
+  //   & p {
+  //     margin-top: 1.5%;
+  //   }
+  // }
 }
 
 @media screen and (min-width: 5000px) {
@@ -800,8 +800,8 @@
   // #logo img {
   //   margin-top: -3.75%;
   // }
-
-  .footer-content {
-    margin-top: -2%;
-  }
+  //
+  // .footer-content {
+  //   margin-top: -2%;
+  // }
 }
