@@ -399,7 +399,8 @@
   }
   #about .body-content{
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    width: 100%;
     justify-content: center;
     padding: 5%;
     & img {
