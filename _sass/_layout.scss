@@ -591,6 +591,12 @@
 
 }
 
+@media screen and (min-width: 1500px) {
+  .nav-menu {
+    margin-left: -167px;
+  }
+}
+
 /* --------------- Large Screens  --------------- */
 @media screen and (min-width: 2000px) {
 
@@ -618,11 +624,11 @@
   }
 
   #hamburger-nav.close-button span:before {
-    top: -0.75em;
+    // top: -0.75em;
   }
 
   #hamburger-nav.close-button span:after {
-    bottom: .5em;
+    // bottom: .5em;
   }
 
   .nav-menu{
