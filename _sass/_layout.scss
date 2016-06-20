@@ -424,10 +424,11 @@
 /* --------------- Mobile Landscape Orientation: iPhone 6  & tablet portrait  --------------- */
 @media screen and (min-width: 1000px) {
 
-  //
-  // .nav {
-  //   margin-top: -7%;
-  // }
+
+  .nav {
+    width: 35px;
+    margin-top: -46px;
+  }
 
   #navbar {
     border-top: 4em solid #282c34;
