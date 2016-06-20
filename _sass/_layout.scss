@@ -460,7 +460,7 @@
 
   #hamburger-nav.close-button span:after{
     height: 0.25em;
-    bottom: -0.25em;
+    top: 0;
   }
 
   #hamburger-nav.close-button span:before{
@@ -511,7 +511,7 @@
   .row-projects {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: 5%;
   }
 
@@ -771,6 +771,9 @@
     margin-top: -118px;
   }
 
+  .nav-menu {
+    margin-left: -604%;
+  }
 }
 
 @media screen and (min-width: 4000px) {
