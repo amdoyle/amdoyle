@@ -450,12 +450,12 @@
 
   #hamburger-nav span:before {
     height: 0.25em;
-    top: -1.75em;
+    top: -.75em;
   }
 
   #hamburger-nav span:after {
     height: 0.25em;
-    bottom: .75em;
+    top: .75em;
   }
 
   #hamburger-nav.close-button span:after{
@@ -469,9 +469,9 @@
     margin-top:0;
   }
 
-  // #logo img {
-  //   margin-top: -8%;
-  // }
+  #logo img {
+    margin-top: -62px;
+  }
 
   .nav-menu {
     width: 81.5vw;
@@ -595,7 +595,7 @@
 @media screen and (min-width: 2000px) {
 
   .nav {
-    margin-top: -52px;
+    margin-top: -67px;
   }
 
   #logo img {
@@ -609,11 +609,11 @@
 
 
   #hamburger-nav span:before {
-    top: -1.75em;
+    // top: -1.75em;
   }
 
   #hamburger-nav span:after {
-    bottom: .85em;
+    top: .75em;
   }
 
   #hamburger-nav.close-button span:before {
@@ -721,7 +721,7 @@
 
   #logo img {
     width: 250px;
-    margin-top: -125px;
+    margin-top: -80px;
   }
 
   #hamburger-nav {
