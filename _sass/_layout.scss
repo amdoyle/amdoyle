@@ -443,7 +443,7 @@
 
   #hamburger-nav span:before {
     height: 0.25em;
-    top: .75em;
+    top: -1.75em;
   }
 
   #hamburger-nav span:after {
@@ -586,9 +586,13 @@
 /* --------------- Large Screens  --------------- */
 @media screen and (min-width: 2000px) {
 
-  // .nav {
-  //   margin-top: -4%;
-  // }
+  .nav {
+    margin-top: -52px;
+  }
+
+  #logo img {
+    margin-top: -83px;
+  }
 
   #navbar {
     border-top: 5em solid $grey-color;
@@ -601,7 +605,7 @@
   }
 
   #hamburger-nav span:after {
-    bottom: 1em;
+    bottom: .85em;
   }
 
   #hamburger-nav.close-button span:before {
