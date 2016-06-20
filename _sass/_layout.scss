@@ -81,6 +81,7 @@
   & li {
     width: auto;
     z-index: 2;
+    padding-bottom: 2%;
   }
   & a {
     line-height: 1.1em;
@@ -190,7 +191,7 @@
 
 .footer-content {
   height: 100%;
-  margin: -16% 0 5% 5%;
+  margin: -18% 0 5% 5%;
   padding-left: 5%;
   border-bottom: 4em solid #282c34;
   border-left: 3em solid transparent;
@@ -293,9 +294,10 @@
 /* --------------- iPhone 6plus --------------- */
 @media screen and (min-width: 400px) {
 
-  // .nav {
-  //   margin-top: -11%;
-  // }
+  .nav-menu {
+    margin-top: -133%;
+    margin-left: 192%;
+  }
 
   // #logo img {
   //   margin-top: -13%;
@@ -316,8 +318,8 @@
   // }
 
   .nav-menu {
-    margin-left: -111%;
-    margin-top: -112%;
+    margin-left: -190%;
+    margin-top: -254%;
   }
 
   #navbar {
@@ -345,7 +347,7 @@
   }
 
   .footer-content {
-    margin-top: -8%;
+    margin-top: -10%;
     & p {
     margin-top: 7%;
     }
@@ -372,7 +374,8 @@
   // }
 
   .nav-menu {
-    margin-left: -125%;
+    margin-left: -235%;
+    margin-top: -304%;
     & a{
       line-height: 2em;
     }
@@ -467,9 +470,9 @@
   // }
 
   .nav-menu {
-    width: 81vw;
+    width: 81.5vw;
     height: auto;
-    margin-left: -152%;
+    margin-left: -105px;
     margin-top: 25%;
     justify-content: flex-start;
     padding-top: 85%;
@@ -556,7 +559,8 @@
   // }
   .nav-menu {
     border-right: 4px solid transparentize($grey-color, 0.05);
-    width: 81vw;
+    width: 79.5vw;
+    margin-left: -118px;
     & li {
       padding: 2%;
       font-size: 1.5em;
@@ -620,7 +624,7 @@
     width: 80vw;
     padding: 10% 10% 10% 0;
     height: auto;
-    margin-left: -210%;
+    margin-left: -200px;
     margin-top: 20%;
     & li {
       padding: 1%;
@@ -767,6 +771,9 @@
     margin-top: 10%;
   }
 
+  .nav-menu {
+    margin-top: 0;
+  }
   .footer-content {
     margin-top: -2.75%;
     & p {
@@ -786,7 +793,8 @@
   // }
 
   .nav-menu {
-    margin-left: -276%;
+    width: 80.5vw;
+    margin-left: -450px;
   }
 
   // #logo img {
