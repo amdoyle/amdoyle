@@ -329,7 +329,7 @@
   }
 
   #hamburger-nav span {
-    width: 70%;
+    // width: 70%;
     // margin-top: 1.5em
   }
 
@@ -719,21 +719,21 @@
     width: 80vw;
   }
 
-  // #logo img {
-  //   width: 12%;
-  //   margin-top: -4.75%;
-  // }
+  #logo img {
+    width: 250px;
+    margin-top: -125px;
+  }
 
   #hamburger-nav {
-    width: 75%;
+    // width: 75%;
     // margin-top: 50%;
    & span {
-    height: .5em;
+    height: .35em;
   } & span:before {
-    height: .5em;
+    height: .35em;
     top: -1em;
   } & span:after {
-      height: .5em;
+      height: .35em;
       top: 1em;
     }
   }
@@ -790,10 +790,11 @@
     margin-top: 3.5%;
   }
   //
-  // .nav {
-  //   margin-top: -5.45%;
-  //   padding-left: 13%;
-  // }
+  .nav {
+    margin-top: -100px;
+    width: 75px;
+    // padding-left: 13%;
+  }
 
   .nav-menu {
     width: 80.5vw;
