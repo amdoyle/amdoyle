@@ -675,7 +675,21 @@
       height: 10%;
     }
 
+  .footer-content {
+    margin-top: -4%;
+  }
 }
+
+@media screen and (min-width: 2700px) {
+
+  #navbar {
+    margin-top: 5%;
+  }
+
+
+
+}
+
 
 @media screen and (min-width: 3000px) {
 
