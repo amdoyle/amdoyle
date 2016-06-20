@@ -8,7 +8,7 @@
     {% include header.html %}
 
     <div class="main-content">
-      {{ content }}
+      {{ content ||  {{site.url}}/home/index.html }}
     </div>
 
     {% include footer.html %}
