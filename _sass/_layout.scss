@@ -709,10 +709,11 @@
     border-right: 6em solid transparent;
   }
 
-  // .nav {
-  //   margin-top: -7%;
-  //   padding-left: 12%;
-  // }
+  .nav {
+    margin-top: -80px;
+    // padding-left: 12%;
+  }
+
   .nav-menu {
     margin-top: 67%;
     margin-left: -171%;
@@ -721,7 +722,7 @@
 
   #logo img {
     width: 250px;
-    margin-top: -80px;
+    margin-top: -110px;
   }
 
   #hamburger-nav {
@@ -758,7 +759,7 @@
 @media screen and (min-width: 4000px) {
 
   #navbar {
-    margin-top: 5%;
+    margin-top: 3%;
   }
 
   // .nav {
@@ -801,9 +802,9 @@
     margin-left: -450px;
   }
 
-  // #logo img {
-  //   margin-top: -3.75%;
-  // }
+  #logo img {
+    margin-top: -128px;
+  }
   //
   // .footer-content {
   //   margin-top: -2%;
