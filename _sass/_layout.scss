@@ -295,8 +295,8 @@
 @media screen and (min-width: 400px) {
 
   .nav-menu {
-    margin-top: -133%;
-    margin-left: 192%;
+    margin-top: -199%;
+    margin-left: -145%;
   }
 
   // #logo img {
@@ -523,7 +523,7 @@
   #about p {
     float: left;
     width: 25%;
-    padding-top: 5%;
+    // padding-top: 5%;
   }
 
 }
@@ -559,7 +559,7 @@
   // }
   .nav-menu {
     border-right: 4px solid transparentize($grey-color, 0.05);
-    width: 79.5vw;
+    width: 80.5vw;
     margin-left: -118px;
     & li {
       padding: 2%;
@@ -657,10 +657,9 @@
     height: 10em;
   }
 
-  // .footer-content p {
-  //   margin-top: 3%;
-  //   padding-left: 0;
-  // }
+  .footer-content {
+    margin-top: -105px;
+  }
 
   #projects img, .extra-content {
     width: 60%;
