@@ -160,7 +160,18 @@
   margin-left: 7%;
   margin-right: 7%;
   /* Firefox-specific rules go here */
-  margin-top: 55%;
+  // margin-top: 55%;
+}
+
+@-moz-document url-prefix() {
+  .fix {
+    padding: 2% 0 10% 0;
+    // top: 30%;
+    // margin-top: 35%;
+    margin-left: 7%;
+    margin-right: 7%;
+    /* Firefox-specific rules go here */
+    margin-top: 55%;
 }
 
 .main-content {
