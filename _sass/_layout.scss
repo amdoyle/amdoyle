@@ -153,15 +153,15 @@
   opacity: .2;
 }
 
-#fix {
-  padding: 2% 0 10% 0;
-  // top: 30%;
-  // margin-top: 20%;
-  // margin-left: 7%;
-  // margin-right: 7%;
-  // position: relative;
-  // order: 2;
-}
+// #fix {
+//   padding: 2% 0 10% 0;
+//   // top: 30%;
+//   // margin-top: 20%;
+//   // margin-left: 7%;
+//   // margin-right: 7%;
+//   // position: relative;
+//   // order: 2;
+// }
 
 
 .main-content {
@@ -170,7 +170,7 @@
   display: flex;
   flex-direction: column;
   order: 2;
-  -webkit-padding-before: 10%;
+  // -webkit-padding-before: 10%;
   flex: 1;
   & h1 {
     font-family: $title-font-family;
