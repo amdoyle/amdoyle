@@ -181,7 +181,7 @@
 .site-footer {
   position: fixed;
   width: 100vw;
-  height: 30px;
+  height: 15px;
   bottom: 1px;
   margin-right: -5%;
   margin-bottom: -1%;
@@ -212,6 +212,8 @@
     padding: 2%;
     width: 25%;
     height: 25%;
+    align-self: flex-end;
+    margin-bottom: -32px;
   }
 }
 
