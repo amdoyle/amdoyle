@@ -169,9 +169,9 @@
   }
 }
 
-.body-content {
-  display: flex;
-}
+// .body-content {
+//   display: flex;
+// }
 
 .resume-content {
     margin-top: 5%;
@@ -228,7 +228,7 @@
  & img {
     width: 50%;
     margin: 0 15%;
-    align-self: center;
+    // align-items: center;
     // padding: 10%;
   }
 }
@@ -345,7 +345,7 @@
     justify-content: center;
     padding: 5%;
     & img {
-      align-self: center;
+      // align-self: center;
       // padding: 0 2% 2% 2%;
       margin: 0 5% 0 0;
       width: 25%;
