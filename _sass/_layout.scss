@@ -110,15 +110,11 @@
   background-color: $secondary-color;
   transition: all .25s ease-in-out;
   z-index: 5;
-} & span {
-  // margin-top: .5em;
-  // margin-bottom: 10%;
-} & span:before {
+}  & span:before {
   top: -.5em;
 } & span:after {
   bottom: -.5em;
-}
-  & p {
+}  & p {
     display:none;
   }
 }
@@ -282,13 +278,13 @@
   color: $brand-color;
 }
 
-@-moz-document url-prefix() {
-  .fix {
-    padding: 2% 0 10% 0;
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-top: 55%;
-}
+// @-moz-document url-prefix() {
+//   .fix {
+//     padding: 2% 0 10% 0;
+//     margin-left: 7%;
+//     margin-right: 7%;
+//     margin-top: 55%;
+// }
 /* --------------- iPhone 6 --------------- */
 @media screen and (min-width: 360px) and (orientation: portrait){
 
