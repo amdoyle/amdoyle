@@ -156,7 +156,7 @@
 .fix {
   padding: 2% 0 10% 0;
   // top: 30%;
-  margin-top: 20%;
+  margin-top: 35%;
   margin-left: 7%;
   margin-right: 7%;
 }
@@ -363,6 +363,10 @@
 /* --------------- Mobile Landscape Orientation: iPhone 6  & tablet portrait  --------------- */
 @media screen and (min-width: 600px) {
 
+
+  .fix {
+    margin-top: 35%;
+  }
 
   // .nav {
   //   margin-top: -14%;
@@ -615,6 +619,10 @@
 
 /* --------------- Large Screens  --------------- */
 @media screen and (min-width: 2000px) {
+
+  .fix {
+    margin-top: 8%;
+  }
 
   .nav {
     margin-top: -67px;
