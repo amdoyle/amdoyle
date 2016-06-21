@@ -169,9 +169,10 @@
   }
 }
 
-// .body-content {
-//   display: flex;
-// }
+.body-content {
+  display: flex;
+  flex-direction: column;
+}
 
 .resume-content {
     margin-top: 5%;
@@ -229,7 +230,7 @@
  & img {
     width: 50%;
     margin: 0 15%;
-    // align-items: center;
+    align-self: center;
     // padding: 10%;
   }
 }
