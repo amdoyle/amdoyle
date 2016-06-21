@@ -181,10 +181,11 @@
   position: fixed;
   width: 100vw;
   height: 0px;
-  bottom: 0;
+  bottom: 1px;
   // margin-bottom: -4%;
   // order: 3;
   margin-left: 7%;
+  padding-bottom: 2%;
   align-self: flex-end;
   font-size: .5em;
   line-height: 1em;
