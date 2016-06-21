@@ -29,7 +29,7 @@
 .background-image {
   opacity: 0.8;
   background-image: url('../images/code.png');
-  height: 8em;
+  height: 5em;
   width: 100%;
   position: fixed;
 }
@@ -49,7 +49,7 @@
   width: 80%;
   border-top: 3em solid $grey-color;
   border-right: 3em solid rgba(0,0,0,0);
-  margin: 7% 10% 0 0;
+  margin: 4% 10% 0 0;
   padding: 1% 0 3% 0;
   display: flex;
   flex-direction: row;
@@ -278,13 +278,7 @@
   color: $brand-color;
 }
 
-@-moz-document url-prefix() {
-  .fix {
-    padding: 2% 0 10% 0;
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-top: 55%;
-}
+
 /* --------------- iPhone 6 --------------- */
 @media screen and (min-width: 360px) and (orientation: portrait){
 
