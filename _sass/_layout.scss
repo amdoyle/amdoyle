@@ -278,13 +278,13 @@
   color: $brand-color;
 }
 
-// @-moz-document url-prefix() {
-//   .fix {
-//     padding: 2% 0 10% 0;
-//     margin-left: 7%;
-//     margin-right: 7%;
-//     margin-top: 55%;
-// }
+@-moz-document url-prefix() {
+  .fix {
+    padding: 2% 0 10% 0;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 55%;
+}
 /* --------------- iPhone 6 --------------- */
 @media screen and (min-width: 360px) and (orientation: portrait){
 
