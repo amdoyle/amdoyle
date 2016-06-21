@@ -21,7 +21,7 @@
   zoom: 1; /*IE6&7*/
 }
 .site-header {
-  height: 20%;
+  // height: 20%;
   width: 100%;
   // margin-bottom: 5%;
   // flex: 1 0 10%;
@@ -330,10 +330,10 @@
 /* --------------- Mobile Landscape Orientation: iPhone 6  & tablet portrait  --------------- */
 @media screen and (min-width: 600px) {
 
-
-  .fix {
-    margin-top: 35%;
-  }
+  //
+  // .fix {
+  //   margin-top: 35%;
+  // }
 
   .nav-menu {
     margin-left: -235%;
@@ -344,7 +344,7 @@
   }
 
   .main-content {
-    margin-top: 15%;
+    margin-top: 5%;
     & img {
       width: 75%;
       height: auto;
@@ -536,10 +536,10 @@
 
 /* --------------- Large Screens  --------------- */
 @media screen and (min-width: 2000px) {
-
-  .fix {
-    margin-top: 8%;
-  }
+  //
+  // .fix {
+  //   margin-top: 8%;
+  // }
 
   .nav {
     margin-top: -67px;
