@@ -159,20 +159,9 @@
   margin-top: 35%;
   margin-left: 7%;
   margin-right: 7%;
-  /* Firefox-specific rules go here */
-  // margin-top: 55%;
+
 }
 
-@-moz-document url-prefix() {
-  .fix {
-    padding: 2% 0 10% 0;
-    // top: 30%;
-    // margin-top: 35%;
-    margin-left: 7%;
-    margin-right: 7%;
-    /* Firefox-specific rules go here */
-    margin-top: 55%;
-}
 
 .main-content {
   position: relative;
@@ -293,6 +282,16 @@
   color: $brand-color;
 }
 
+@-moz-document url-prefix() {
+  .fix {
+    padding: 2% 0 10% 0;
+    // top: 30%;
+    // margin-top: 35%;
+    margin-left: 7%;
+    margin-right: 7%;
+    /* Firefox-specific rules go here */
+    margin-top: 55%;
+}
 /* --------------- iPhone 6 --------------- */
 @media screen and (min-width: 360px) and (orientation: portrait){
 
