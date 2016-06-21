@@ -1,9 +1,9 @@
 # Site settings
 title: Ann Marie Doyle
 email: am@amdoyle.com
-description: Web Developer, Creater, Coffee Lover & Sometimes Adventurer
-baseurl: "/home/"
-url: "www.amdoyle.com/"
+description: Web Developer, Creater, Coffee Lover, Book Nerd, & Sometimes Adventurer
+baseurl: ""
+url: "http://www.amdoyle.com/"
 twitter_username: AmDoyle
 github_username:  amdoyle
 linkedin_username: annmariedoyle
