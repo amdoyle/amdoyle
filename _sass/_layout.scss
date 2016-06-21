@@ -24,8 +24,11 @@
   height: 20%;
   width: 100%;
   // margin-bottom: 5%;
+  // flex: 1 0 10%;
   position: fixed;
   z-index: 15;
+  // order: 1;
+  top: 0;
 }
 .background-image {
   opacity: 0.8;
@@ -54,7 +57,7 @@
   padding: 1% 0 3% 0;
   display: flex;
   flex-direction: row;
-  order: 1 0 auto;
+  // order: 1 0 auto;
 }
 
 .nav {
@@ -150,13 +153,14 @@
   opacity: .2;
 }
 
-.fix {
+#fix {
   padding: 2% 0 10% 0;
   // top: 30%;
-  margin-top: 50%;
+  margin-top: 35%;
   margin-left: 7%;
   margin-right: 7%;
-
+  // position: relative;
+  // order: 2;
 }
 
 
@@ -166,6 +170,7 @@
   display: flex;
   flex-direction: column;
   order: 2;
+  -webkit-padding-before: 10%;
   flex: 1;
   & h1 {
     font-family: $title-font-family;
