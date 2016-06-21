@@ -169,6 +169,10 @@
   }
 }
 
+.body-content {
+  display: flex;
+}
+
 .resume-content {
     margin-top: 5%;
 }
@@ -224,6 +228,7 @@
  & img {
     width: 50%;
     margin: 0 15%;
+    align-self: center;
     // padding: 10%;
   }
 }
