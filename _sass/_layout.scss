@@ -167,6 +167,7 @@
   & h1 {
     font-family: $title-font-family;
     font-size: $title-size;
+    padding: 10% 0 5% 0;
   } & h2 {
     padding-bottom: 2%;
   } & ul {
@@ -490,6 +491,9 @@
   }
   .main-content {
     margin-top: 20%;
+    & h1 {
+      padding: 0;
+    }
   }
 
   .footer-content img {
@@ -519,13 +523,16 @@
     margin-left: 5%;
   }
 
-  #about img {
-    float: left;
-    width: 25%;
-    box-sizing: padding-box;
-    padding-right: 10%;
-    padding-top: 5%;
-    margin: 0;
+  #about .body-content {
+    flex-direction: row;
+    img {
+      float: left;
+      width: 25%;
+      box-sizing: padding-box;
+      padding-right: 10%;
+      padding-top: 5%;
+      margin: 0;
+    }
   }
 
   #about p {
