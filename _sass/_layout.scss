@@ -231,7 +231,9 @@
     width: 50%;
     margin: 0 15%;
     align-self: center;
-    // padding: 10%;
+    padding: 3%;
+  } & p {
+    padding: 5%;
   }
 }
 
