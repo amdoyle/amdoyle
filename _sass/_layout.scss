@@ -153,18 +153,21 @@
   opacity: .2;
 }
 
+.fix {
+  padding: 2% 0 10% 0;
+  top: 30%;
+  margin-top: 30%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
 .main-content {
   position: relative;
   z-index: 0;
   display: flex;
   flex-direction: column;
-  padding: 2% 0 10% 0;
   order: 2;
   flex: 1;
-  top: 30%;
-  margin-top: 30%;
-  margin-left: 7%;
-  margin-right: 7%;
   & h1 {
     font-family: $title-font-family;
     font-size: $title-size;
