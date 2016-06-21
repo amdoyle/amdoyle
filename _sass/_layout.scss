@@ -313,9 +313,12 @@
   }
 
 
-  .main-content img {
+  .main-content {
+    margin-top: 8%;
+  &  img {
       width: 75%;
       height: auto;
+    }
   }
 
 }
