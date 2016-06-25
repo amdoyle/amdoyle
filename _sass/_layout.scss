@@ -151,6 +151,7 @@
 
 .main-content {
   position: absolute;
+  min-height: 500px;
   z-index: 0;
   margin: 25% 5% 5% 5%;
   padding: 2% 2% 10% 2%;
@@ -169,10 +170,17 @@
   }
 }
 
-.body-content {
-  display: flex;
-  flex-direction: column;
-}
+
+  .body-content {
+    min-height: 500px;
+    padding-bottom: 5%;
+  }
+
+  .body-content-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 .resume-content {
     margin-top: 5%;
@@ -227,12 +235,16 @@
 }
 
 #about {
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   padding-bottom: 2%;
  & img {
-    width: 50%;
-    margin: 0 15%;
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 200px;
+    max-height: 200px;
+    // margin: 0 15%;
     align-self: center;
     padding: 3%;
   } & p {
@@ -275,10 +287,10 @@
   align-items: center;
 }
 
-#about img {
-  width: 50%;
-  height: auto;
-}
+// #about img {
+//   width: 50%;
+//   height: auto;
+// }
 
 .pink {
   color: $brand-color;
@@ -343,12 +355,13 @@
       height: auto;
     }
   }
+  //
+  // .body-content {
+  //   min-height: 500px;
+  //   padding-bottom: 5%;
+  // }
 
-  .body-content {
-    padding-bottom: 5%;
-  }
-
-  #about .body-content{
+  #about {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -356,9 +369,9 @@
     padding: 5%;
     & img {
       // align-self: center;
-      padding: 3%;
-      // margin: 0 5% 0 0;
-      width: 25%;
+      // padding: 3%;
+      // // margin: 0 5% 0 0;
+      // width: 25%;
       // height: 25%;
     }
   }
@@ -462,15 +475,21 @@
     margin-left: 5%;
   }
 
+  .body-content-image-wrapper {
+    display: inline-block;
+  }
+
   #about .body-content {
     flex-direction: row;
+    justify-content: center;
+    display: flex;
     img {
       float: left;
       align-self: flex-start;
-      width: 25%;
-      box-sizing: padding-box;
-      padding: 0 10% 0 0;
-      margin: 0;
+      // width: 25%;
+      // box-sizing: padding-box;
+      // padding: 0 10% 0 0;
+      // margin: 0;
     } & p {
       padding: 0;
     }
@@ -597,8 +616,8 @@
   }
 
   #about img {
-      width: 10%;
-      height: 10%;
+      // width: 10%;
+      // height: 10%;
     }
 
 }
