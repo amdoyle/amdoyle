@@ -4,9 +4,9 @@ jQuery(document).ready(function($) {
 
   $('#hamburger-nav').on('click', function(e){
     e.preventDefault();
-    $(this).toggleClass('close-button');
-    $('.nav-menu').slideToggle();
-    $('#logo').toggleClass('dim');
+    // $(this).toggleClass('close-button');
+    $('.nav-menu').toggle();
+    $('.navbar').toggleClass('dim');
   });
 
   $('.extra-content').hide();
