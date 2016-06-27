@@ -371,7 +371,7 @@
   #about {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    // width: 100%;
     justify-content: center;
     padding: 5%;
     & img {
@@ -414,20 +414,18 @@
     border-right: 4em solid transparent;
   }
 
-  #hamburger-nav span {
-    height: 0.25em;
-  }
-
-  #hamburger-nav span:first-of-type {
-    height: 0.25em;
+  #hamburger-nav {
+    height: 50px;
     top: -.75em;
+    & span {
+    height: .25em;
+    top: 0em;
+    } & span:first-of-type {
+      top: .75em;
+    } & span:last-of-type {
+      top: 1.5em;
+    }
   }
-
-  #hamburger-nav span:last-of-type {
-    height: 0.25em;
-    top: .75em;
-  }
-
     // #hamburger-nav.close-button span:after{
     //   height: 0.25em;
     //   top: 0;
@@ -447,7 +445,7 @@
     width: 75vw;
     height: auto;
     margin-left: -70vw;
-    margin-top: -43%;
+    margin-top: -125%;
     padding: 0;
     background-color: $grey-color;
     float: left;
@@ -469,8 +467,25 @@
       padding: 0;
   }
 
-  .footer-content img {
-    margin-top: 13%;
+  .site-footer {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .footer-image {
+    margin-left: 0;
+  }
+
+
+  .footer-content {
+    width: 25vw;
+    float: right;
+    padding-left: 0;
+    margin: -75px 0 0 0;
+    & img {
+      margin: 30% 0 5% 0;
+      padding: 0;
+    }
   }
 
   .resume-content {
