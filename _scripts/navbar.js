@@ -4,7 +4,6 @@ jQuery(document).ready(function($) {
 
   $('#hamburger-nav').on('click', function(e){
     e.preventDefault();
-    // $(this).toggleClass('close-button');
     $('.nav-menu').toggle();
     $('.navbar').toggleClass('dim');
   });
