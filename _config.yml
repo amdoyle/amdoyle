@@ -3,8 +3,7 @@ title: Ann Marie Doyle
 email: am@amdoyle.com
 description: Web developer, coffee lover, book nerd, and a sometimes adventurer.
 baseurl: "/"
-url: "http://localhost:4000/"
-# url: "http://www.amdoyle.com/"
+url: "http://www.amdoyle.com/"
 twitter_username: AmDoyle
 github_username:  amdoyle
 linkedin_username: annmariedoyle
