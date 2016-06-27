@@ -593,6 +593,10 @@
       height: .5em;
       top: 0em;
     }
+
+    .footer-content img {
+      margin-top: -3%;
+    }
 }
 
 @media screen and (min-width: 3500px) {
@@ -645,6 +649,11 @@
 
   #logo img {
     margin-top: -128px;
+  }
+
+  .footer-content img {
+    width: 13%;
+    margin-top: -3%
   }
 
 }
