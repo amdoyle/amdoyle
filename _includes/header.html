@@ -11,12 +11,22 @@
       <span></span>
       <span></span>
     </div>
+
         <!-- Drop down menu -->
         <ul class="nav-menu">
-          <li><a href="{{site.url}}">home</a></li>
-          <li><a href="{{site.url}}/projects">projects</a></li>
-          <li><a href="{{site.url}}/resume">resume</a></li>
-          <li><a href="{{site.url}}/contact">contact</a></li>
+          <!-- assinging the var navigation_pages and sorting based on the page meta data-->
+          {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+          <!-- loop over each page that has the navigation_weight data-->
+						{% for p in navigation_pages %}
+              <!-- out put each link and if the page href is equal to the current page heighlight it-->
+							{% if p.navigation_weight %}
+								<li>
+									<a href="{{ p.url }}" {% if p.url == page.url %}id="current-page"{% endif %}>
+										{{ p.title }}
+									</a>
+								</li>
+							{% endif %}
+						{% endfor %}
         </ul>
       </nav>
     <!-- Logo -->

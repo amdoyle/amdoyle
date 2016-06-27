@@ -72,7 +72,6 @@
   margin-top: -15vh;
   margin-left: -10vw;
   margin-bottom: 10vh;
-  // display: block;
   overflow: hidden;
   list-style: none;
   align-items: center;
@@ -124,24 +123,15 @@
     display:none;
   }
 }
-// #hamburger-nav.close-button span{
-//   height: 0;
-// }
-// #hamburger-nav.close-button span:before {
-//   transform: rotate(45deg);
-//   height: .2em;
-//   top: 0;
-// }
-// #hamburger-nav.close-button span:after {
-//   transform: rotate(-45deg);
-//   height: .2em;
-//   bottom: -.2em;
-// }
+
 .sr-only {
   height: 0;
   display: none;
 }
 
+#current-page {
+  color: $brand-color;
+}
 //Site logo
 #logo img {
   display: inline-block;
@@ -151,20 +141,12 @@
   transition: all .25s ease-in-out;
 }
 
-// .dim {
-//   opacity: .2;
-// }
-
 .main-content {
   position: absolute;
   min-height: 500px;
   z-index: 0;
   margin: 25% 5% 5% 5%;
   padding: 2% 2% 10% 2%;
-  // display: flex;
-  // flex-direction: column;
-  // order: 2;
-  // flex: 1;
   & h1 {
     font-family: $title-font-family;
     font-size: $title-size;
@@ -294,41 +276,13 @@
   align-items: center;
 }
 
-// #about img {
-//   width: 50%;
-//   height: auto;
-// }
-
 .pink {
   color: $brand-color;
 }
 
 
-
-/* --------------- iPhone 6 --------------- */
-@media screen and (min-width: 360px) and (orientation: portrait){
-
-}
-
-/* --------------- iPhone 6plus --------------- */
-@media screen and (min-width: 400px) {
-
-  // .nav-menu {
-  //   margin-top: -199%;
-  //   margin-left: -145%;
-  // }
-
-}
-
 /* --------------- Mobile Landscape Orientation: iPhone 5 --------------- */
 @media screen and (min-width: 500px) {
-
-
-  // .nav-menu {
-    // margin-left: -190%;
-    // margin-top: -25vh;
-  //       height: 112vh;
-  // }
 
   .navbar {
     border-top: 3em solid $grey-color;
@@ -349,14 +303,6 @@
 /* --------------- Mobile Landscape Orientation: iPhone 6  & tablet portrait  --------------- */
 @media screen and (min-width: 600px) {
 
-  // .nav-menu {
-  //   margin-left: -235%;
-  //   margin-top: -304%;
-  //   & a{
-  //     line-height: 2em;
-  //   }
-  // }
-
   .main-content {
     margin-top: 5%;
     & img {
@@ -364,25 +310,12 @@
       height: auto;
     }
   }
-  //
-  // .body-content {
-  //   min-height: 500px;
-  //   padding-bottom: 5%;
-  // }
 
   #about {
     display: flex;
     flex-direction: column;
-    // width: 100%;
     justify-content: center;
     padding: 5%;
-    & img {
-      // align-self: center;
-      // padding: 3%;
-      // // margin: 0 5% 0 0;
-      // width: 25%;
-      // height: 25%;
-    }
   }
 
 }
@@ -428,16 +361,6 @@
       top: 1.5em;
     }
   }
-    // #hamburger-nav.close-button span:after{
-    //   height: 0.25em;
-    //   top: 0;
-    // }
-    //
-    // #hamburger-nav.close-button span:before{
-    //   height: 0.25em;
-    //   top: 0;
-    //   margin-top:0;
-    // }
 
   #logo img {
     margin-top: -62px;
@@ -451,8 +374,6 @@
     padding: 0;
     background-color: $grey-color;
     float: left;
-    // justify-content: flex-start;
-    // padding-top: 85%
     display: inline-block;
     & li {
       padding: 0 5%;
@@ -524,10 +445,6 @@
     img {
       float: left;
       align-self: flex-start;
-      // width: 25%;
-      // box-sizing: padding-box;
-      // padding: 0 10% 0 0;
-      // margin: 0;
     } & p {
       padding: 0;
     }
@@ -543,34 +460,9 @@
 /* --------------- Laptop  --------------- */
 @media screen and (min-width: 1100px) {
 
-
   #hamburger-nav span {
     height: .25em;
   }
-
-  // #hamburger-nav span:before {
-  //   height: .25em;
-  //   top:  -.75em;
-  // }
-  //
-  //  #hamburger-nav span:after {
-  //    height: .25em;
-  //    bottom: -.75em;
-  //  }
-
-  .nav-menu {
-    // border-right: 4px solid transparentize($grey-color, 0.05);
-    // width: 80.5vw;
-    // margin-left: -118px;
-    // & li {
-    //   padding: 2%;
-    //   font-size: 1.5em;
-    // }
-  }
-
-  // .dim {
-  //   opacity: 100;
-  // }
 
   .footer-content {
     border-bottom: 6em solid #282c34;
@@ -581,13 +473,6 @@
     width: 90%;
   }
 
-
-}
-
-@media screen and (min-width: 1500px) {
-  .nav-menu {
-    // margin-left: -167px;
-  }
 }
 
 /* --------------- Large Screens  --------------- */
@@ -614,18 +499,7 @@
   .nav-menu{
     width: 40vw;
     margin-left: -64vw;
-    // padding: 10% 10% 10% 0;
-    // height: auto;
-    // margin-left: -200px;
-    // margin-top: 20%;
-    // & li {
-    //   padding: 1%;
-    //   font-size: 2em;
-    // }
   }
-  // .dim {
-  //   opacity: 100;
-  // }
 
   .main-content {
     padding: 0 12%;
@@ -654,24 +528,11 @@
     }
   }
 
-  #about img {
-      // width: 10%;
-      // height: 10%;
-  }
-
   #contact-info {
     width: 65vw;
   }
 
 }
-
-@media screen and (min-width: 2600px) {
-
-
-
-
-}
-
 
 @media screen and (min-width: 3000px) {
 
@@ -685,26 +546,14 @@
     margin-top: -80px;
   }
 
-  .nav-menu {
-    // margin-top: 67%;
-    // margin-left: -562%;
-    // width: 80vw;
-  }
-
   #logo img {
     width: 250px;
     margin-top: -110px;
   }
 
   #hamburger-nav {
-   & span {
-    height: .35em;
-  } & span:before {
-  //   height: .35em;
-  //   top: -1em;
-  // } & span:after {
-  //     height: .35em;
-  //     top: 1em;
+     & span {
+      height: .35em;
     }
   }
 
@@ -720,10 +569,6 @@
 
 @media screen and (min-width: 3500px) {
 
-  // #navbar {
-  //   margin-top: 3%;
-  // }
-
   .nav {
     margin-top: -90px;
   }
@@ -732,9 +577,6 @@
     margin-top: -118px;
   }
 
-  .nav-menu {
-    // margin-left: -604%;
-  }
 }
 
 @media screen and (min-width: 4000px) {
@@ -747,17 +589,10 @@
     margin-top: -120px;
   }
 
-  .nav-menu {
-    // width: 83vw;
-    // margin-left: -450px;
-  }
 }
 
 
 @media screen and (min-width: 4500px) {
-  // #navbar {
-  //   margin-top: 3%;
-  // }
 
   .nav {
     margin-top: -98px;
@@ -767,18 +602,9 @@
     margin-top: -126px;
   }
 
-  .nav-menu {
-    // width: 81vw;
-    // margin-top: 0;
-    // margin-left: -450px;
-  }
-
 }
 
 @media screen and (min-width: 5000px) {
-  // #navbar {
-  //   margin-top: 2.5%;
-  // }
 
   .nav {
     margin-top: -100px;
@@ -787,11 +613,10 @@
 
   .nav-menu {
     margin-top: -97%;
-    // width: 80.5vw;
-    // margin-left: -450  px;
   }
 
   #logo img {
     margin-top: -128px;
   }
+
 }
