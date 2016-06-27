@@ -428,10 +428,6 @@
     float: right;
     padding-left: 0;
     margin: -75px 0 0 0;
-    & img {
-      // margin: 30% 0 5% 0;
-      // padding: 0;
-    }
   }
 
   .resume-content {
@@ -441,6 +437,10 @@
   .footer-content {
     border-bottom: 6em solid #282c34;
     border-left: 6em solid transparent;
+    & img {
+      margin-top: 2%;
+      width: 15%;
+    }
   }
 
   #projects img, .extra-content {
