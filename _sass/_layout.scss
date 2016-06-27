@@ -201,21 +201,24 @@
 
 .footer-content {
   height: 100%;
-  width: 25vw;
-  float: right;
   margin: -75px 0 5% 5%;
   padding-left: 5%;
   border-bottom: 4em solid #282c34;
   border-left: 3em solid transparent;
   flex: 1;
   color: white;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: baseline;
    & img {
     display: inline;
     margin: 5% 0 5% 0;
-    padding: 5%;
-    width: 30%;
+    padding: 2%;
+    width: 25%;
+    height: 25%;
+    align-self: flex-end;
     margin-bottom: -32px;
-    box-sizing: border-box;
   }
 }
 
