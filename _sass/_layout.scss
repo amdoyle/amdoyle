@@ -47,7 +47,7 @@
   opacity: 1  ;
   position: relative;
   z-index: 10;
-  width: 80%;
+  width: 60vw;;
   border-top: 3em solid $grey-color;
   border-right: 3em solid rgba(0,0,0,0);
   margin: 4% 10% 0 0;
@@ -395,6 +395,7 @@
   }
 
   #navbar {
+    width: 25vw;
     border-top: 4em solid #282c34;
     border-right: 4em solid transparent
   }
