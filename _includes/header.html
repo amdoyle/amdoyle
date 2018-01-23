@@ -1,17 +1,12 @@
 <header class="site-header group">
-  <div class="background-image">
+  <!-- Logo -->
+  <div id="logo">
+    <img src="{{site.url}}/images/amWordMark.svg" >
   </div>
   <!-- Header bar with site nav and logo -->
   <div class="navbar">
     <!-- Hamburger Nav bar - present on all screen sizess -->
     <nav class="nav" role="navigation">
-    <div id="hamburger-nav">
-      <p class="sr-only">Toggle navigation</p>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
         <!-- Drop down menu -->
         <ul class="nav-menu">
           <!-- assinging the var navigation_pages and sorting based on the page meta data-->
@@ -29,11 +24,6 @@
 						{% endfor %}
         </ul>
       </nav>
-    <!-- Logo -->
-    <div id="logo">
-      <img src="{{site.url}}/images/amWordMark.svg" >
-    </div>
-
   </div>
 
 </header>
