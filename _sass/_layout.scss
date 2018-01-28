@@ -7,7 +7,6 @@
   justify-content: space-between;
 }
 
-
 .site-header {
   width: 100%;
   position: fixed;
@@ -33,21 +32,19 @@
   display: flex;
 
   .nav-menu {
-    width: 78vw;
-    height: 6em;
-    margin-left: 12vw;
-    margin: -3em 10vw 0!important;
+    margin: -2.75em 0 0 175px;
     position: fixed;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
   }
 
    li {
-     display: inline;
+    display: inline;
+    margin: 0 25px;
     width: auto;
     padding-bottom: 0;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
   }
   & a {
     line-height: 1.1em;
@@ -66,20 +63,21 @@
 #logo {
   position: fixed;
   display: flex;
-  width: 12vw;
+  // width: 25px;
   padding-left: 2vw;
-  height: 6em;
+  height: auto;
   z-index: 1;
   align-items: center;
+  top: 25px;
   img {
-    width: 150px;
+    width: 120px;
     transition: all .25s ease-in-out;
   }
 }
 
 .main-content {
   max-width: 1200px;
-  margin: 7em auto;
+  margin: 10em auto;
   & h1 {
     padding: 5px 0;
     font-family: $title-font-family;
