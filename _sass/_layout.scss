@@ -11,17 +11,17 @@
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 
 // Nav bar
-
 .nav {
   padding: 0;
   opacity: 1;
   position: relative;
-  width: 90vw;
+  width: auto;
   height: auto;
-  border-top: 6em solid $grey-color;
+  border-top: 6em solid $black-color;
   border-right: 6em solid rgba(0,0,0,0);
   margin: 0;
   display: flex;
@@ -32,85 +32,169 @@
   display: flex;
 
   .nav-menu {
-    margin: -2.75em 0 0 175px;
+    margin: -2.5em 0 0 175px;
     position: fixed;
+
+    @media (min-width: 550px) {
+      margin: -2.75em 0 0 175px;
+    }
   }
 
    li {
-    display: inline;
-    margin: 0 25px;
     width: auto;
+    margin-bottom: 10px;
     padding-bottom: 0;
+    text-transform: lowercase;
+
+    @media (min-width: 550px) {
+      display: inline;
+      margin: 0 25px;
+    }
 
     &:first-of-type {
       margin-left: 0;
     }
   }
-  & a {
+
+   a {
+    padding: 10px;
     line-height: 1.1em;
-    text-decoration: none;
     color: white;
-  }
-  & a:hover{
-    color: $secondary-color-dark;
   }
 }
 
 #current-page {
   color: $brand-color;
 }
+
+@keyframes logo-fade {
+  0% {
+    fill: $brand-color;
+  }
+
+  50% {
+    fill: lighten($brand-color, 10%);
+  }
+
+  100% {
+    fill: $brand-color;
+  }
+}
+
 //Site logo
 #logo {
   position: fixed;
-  display: flex;
-  // width: 25px;
   padding-left: 2vw;
   height: auto;
   z-index: 1;
-  align-items: center;
   top: 25px;
-  img {
+
+  svg.above-logo {
     width: 120px;
+    transition: all .5s ease-in;
+    position: absolute;
+
+    path {
+      fill: $brand-color;
+    }
+  }
+
+  svg.background-logo {
+    width: 120px;
+    height: 120px;
+    transition: all .5s ease-in;
+    position: absolute;
+    z-index: -1;
+
+
+    path {
+      fill: $brand-color;
+    }
+  }
+
+  &:hover svg.above-logo {
+    path {
+      animation: logo-fade 5s ease infinite;
+    }
+  }
+
+  &:hover svg.background-logo {
     transition: all .25s ease-in-out;
+    animation: logo-rotate 5.5s ease;
+
+    path {
+      animation: logo-fade 5.5s ease;
+    }
   }
 }
 
 .main-content {
-  max-width: 1200px;
-  margin: 10em auto;
+  max-width: 90vw;
+  margin: 10em auto 5em;
+
+  @media (min-width: 780px) {
+    max-width: calc(100% - 12em);
+  }
+
   & h1 {
-    padding: 5px 0;
+    padding: 5px 10px;
+    margin: 15px 0 35px;
     font-family: $title-font-family;
     font-size: $title-size;
+    box-sizing: border-box;
+    position: relative;
+
+    &::before {
+      height: 1em;
+      width: 100%;
+      display: block;
+      background: transparentize($brand-color, .75);
+      left: 0;
+      content: '';
+      top: 0%;
+      position: absolute;
+      z-index: -1;
+    }
   }
 }
 
   .body-content {
-    width: 75%;
+    width: 100%;
     margin: 5px auto;
     padding-bottom: 5%;
     display: flex;
     justify-content: space-between;
 
+    @media (min-width: 780px) {
+      width: 75%;
+    }
+
     .col-1 {
        width: 30%;
 
       img {
-        max-height: 300px;
+         max-height: 150px;
          display: inline;
+
+          @media (min-width: 780px) {
+            max-height: 300px;
+          }
        }
      }
 
      .col-2 {
-       width: 60%;
+        width: 100%;
+
+        @media (min-width: 780px) {
+          width: 60%;
+        }
 
        p {
-         background:rgba($grey-color, .9);
+         background:rgba($black-color, .9);
          padding: 2%;
          margin-top: 25%;
          margin-left: -30%;
-         color: #fff;
-         // width: 0%;
+         color: $white-color;
        }
      }
 
@@ -124,33 +208,54 @@
   }
 
 .resume-content {
-    margin-top: 5%;
-}
-
-.footer-content {
-  height: 100%;
-  margin: -6em 0 0 0;
-  padding-left: 5%;
-  border-bottom: 6em solid #282c34;
-  border-left: 6em solid transparent;
-  flex: 1;
-  color: white;
-   & img {
-    display: inline;
-    margin: 5% 0 5% 0;
-    padding: 2%;
-    width: 25%;
-    height: 25%;
-    align-self: flex-end;
-    margin-bottom: -32px;
-  }
+  margin-top: 5%;
 
   ul {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    align-items: baseline;
-    height: auto;
+    margin: 10px 0;
+
+    &.resume-content-li {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.site-footer {
+  height: auto;
+  margin: 0;
+  border-bottom: 6em solid $black-color;
+  border-left: 6em solid transparent;
+  flex: 1;
+  position: relative;
+
+  ul {
+    position: absolute;
+    transform: translateY(100%);
+    text-align: right;
+
+    @media (min-width: 780px) {
+      width: 85vw;
+      margin-right: 15vw;
+    }
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 50px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    i.fa {
+      color: $white-color;
+      font-size: 2em;
+      transition: .3s color ease-in;
+    }
+
+    a .fa:hover,
+    a .fa:focus {
+      color: $brand-color;
+    }
   }
 }
 
@@ -201,9 +306,30 @@
   transform: rotate(90deg);
 }
 
-.resume-content-li li:before {
-  content: "// ";
-  color: $brand-color;
+.resume-content {
+
+  h2 {
+    color: #000;
+    margin-bottom: 15px;
+    position: relative;
+
+    &::before {
+      height: 1em;
+      width: 100%;
+      display: block;
+      background: transparentize($brand-color, .9);
+      content: '';
+      top: -10%;
+      left: 0;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  &-li li:before {
+    content: "// ";
+    color: $secondary-color;
+  }
 }
 
 #contact-info {
@@ -221,8 +347,36 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  ul {
+    padding: 50px;
+    background:rgba($black-color, .9);
+
+    @media (min-width: 780px) {
+      padding: 50px 100px;
+    }
+  }
+
+  i.fa {
+    margin-right: 12px;
+    font-size: 20px;
+    vertical-align: bottom;
+    color: $white-color;
+  }
+
+  a {
+    color: $white-color;
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
 }
 
 .pink {
   color: $brand-color;
+}
+
+.sr-only {
+  color: transparent;
 }
