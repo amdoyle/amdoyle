@@ -1,0 +1,24 @@
+$content-font-family: 'Open Sans', sans-serif;
+$base-font-size: 1.5em;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.5em;
+$title-font-family: 'Open Sans', sans-serif;
+$title-size: 2.5em;
+
+$spacing-unit: 30px;
+
+$white-color: #fdfdfd;
+$black-color: #2c3539;
+$text-color: #2c3539;
+$secondary-color:  #20a39e;
+$secondary-color-dark:  darken($secondary-color, 50%);
+$background-color: #fdfdfd;
+$brand-color: #ef757B;
+$brand-color-dark: darken($brand-color, 50%);
+
+$grey-color: #d8d8d8;
+$grey-color-light: lighten($grey-color, 5%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm: 600px;
+$on-laptop: 800px;

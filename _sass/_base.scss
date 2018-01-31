@@ -51,8 +51,12 @@ table {
 
 a {
   color: $brand-color;
-  & a:hover {
-    color: $secondary-color-dark;
+  transition: .3s all ease;
+  text-decoration: none;
+
+  &:hover {
+    color: $brand-color-dark;
+    text-decoration: underline;
   }
 }
 
