@@ -18,11 +18,11 @@
 						{% for p in navigation_pages %}
               <!-- out put each link and if the page href is equal to the current page heighlight it-->
 							{% if p.navigation_weight %}
-								<li>
+								<!-- <li>
 									<a href="{{ p.url }}" {% if p.url == page.url %}id="current-page"{% endif %}>
 										{{ p.title }}
 									</a>
-								</li>
+								</li> -->
 							{% endif %}
 						{% endfor %}
         </ul>
