@@ -8,5 +8,4 @@ Personal site for http://www.amdoyle.com/
 ###To Get Stared
 * Download and install Jekyll see (https://jekyllrb.com/ for documentation)
 * Clone repo
-* run Jykell server
-
+* jekyll serve
