@@ -1,5 +1,15 @@
 /* --------------- BASE STYLES FOR iPhone 5 - 320 x 568 --------------- */
 
+@keyframes logo {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 30;
+  }
+}
+
 // Site header
 .body-wrapper {
   display: flex;
@@ -52,8 +62,7 @@
   //Site logo
   #logo {
     padding: 5px 2vw 5px;
-    height: auto;
-    z-index: 1;
+    height: 55px;
 
     svg.above-logo {
       width: 40px;
@@ -64,32 +73,21 @@
       }
     }
 
-    svg.background-logo {
-      width: 120px;
-      height: 120px;
-      transition: all .5s ease-in;
-      position: absolute;
-      z-index: -1;
-
-
+    svg {
       path {
-        fill: $brand-color;
+        stroke: #fff;
       }
     }
 
-    &:hover svg.above-logo {
-      path {
-        animation: logo-fade 5s ease infinite;
-      }
-    }
-
-    &:hover svg.background-logo {
-      transition: all .25s ease-in-out;
-      animation: logo-rotate 5.5s ease;
-
-      path {
-        animation: logo-fade 5.5s ease;
-      }
+    #a-logo {
+      stroke-dasharray: 30;
+      stroke: $brand-color;
+      fill: transparent;
+      stroke-width: 0.1;
+      animation-duration: 5s;
+      animation-name: logo;
+      animation-iteration-count: 1;
+      animation-direction: reverse;
     }
   }
 }
@@ -97,21 +95,6 @@
 #current-page {
   color: $brand-color;
 }
-
-@keyframes logo-fade {
-  0% {
-    fill: $brand-color;
-  }
-
-  50% {
-    fill: lighten($brand-color, 10%);
-  }
-
-  100% {
-    fill: $brand-color;
-  }
-}
-
 
 .main-content {
   max-width: 90vw;
@@ -123,7 +106,7 @@
 
   & h2.headline {
     padding: 5px 10px;
-    margin: 0 0 35px;
+    margin: 0 0 21px;
     color: $black-color;
     font-family: $title-font-family;
     font-size: $title-size;
@@ -150,6 +133,10 @@
 
     p {
       margin-bottom: 1em;
+
+      &:last-of-type {
+        margin-bottom: 0.5em;
+      }
     }
   }
 }
